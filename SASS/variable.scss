@@ -1,0 +1,11 @@
+$navBGColor: darken(#f8f9fb, 6%) ; // Navigation color background #E8E9Eb
+$headwidth: ((100% / 3) - 1%); //width of the header
+$menuWidth: ($headwidth * 2); //menu nav widht
+$navHeight: 75px; //Navigation top bar height
+$bannerWidth: 100%; // banners
+$sectionHeading: 24px;
+$bannerHeading: 36px;
+$sectionTitleHeight: 45px;
+
+$shadowoffset: 0px 0px 15px rgba(0,0,0,0.2); // Shadow below
+$shadowinset: inset 0em 2em 1.5em -1em lighten(#333, 30%); // Shadow above

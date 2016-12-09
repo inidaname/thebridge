@@ -1,0 +1,17 @@
+<option></option>
+<option>Barikinladi</option>
+<option>Bassa</option>
+<option>Bokkos</option>
+<option>Jos East</option>
+<option>Jos North</option>
+<option>Jos South</option>
+<option>Kanam</option>
+<option>Kanke</option>
+<option>Lantang North</option>
+<option>Langtang South</option>
+<option>Mangu</option>
+<option>Pankshin</option>
+<option>Quan'Pan</option>
+<option>Riyom</option>
+<option>Shendam</option>
+<option>Wase</option>

@@ -1,0 +1,16 @@
+<option></option><option>Asa</option>
+<option>Barten</option>
+<option>Edu</option>
+<option>Ekiti</option>
+<option>Ifeelodun</option>
+<option>Ilorin-East</option>
+<option>Ilorin-West</option>
+<option>Ilorin-South</option>
+<option>Irepodun</option>
+<option>Isin</option>
+<option>Kaiama</option>
+<option>Moro</option>
+<option>Offa</option>
+<option>Oke-ero</option>
+<option>Oyun</option>
+<option>Pategi</option>

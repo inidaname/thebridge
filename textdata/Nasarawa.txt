@@ -1,0 +1,13 @@
+<option></option><option>Akwanga</option>
+<option>Awe</option>
+<option>Doma<option>
+<option>Karu</option>
+<option>Keana</option>
+<option>Keffi</option>
+<option>Kokona</option>
+<option>Lafia</option>
+<option>Nasarawa</option>
+<option>Nasarawa Eggon</option>
+<option>Obi</option>
+<option>Toto</option>
+<option>Wamba</option>

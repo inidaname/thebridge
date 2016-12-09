@@ -1,0 +1,9 @@
+<option></option><option>Abuja Municipal</option>
+<option>Abaji</option>
+<option>Bwari</option>
+<option>Gwagwalada</option>
+<option>Kuje</option>
+<option>Kwali</option>
+<option>Karshi</option>
+<option>Ruboshi</option>
+<option>Yaba</option>

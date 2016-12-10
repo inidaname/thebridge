@@ -30,11 +30,6 @@
     width: 100%;
     height: 755px;
     position: relative;
-    .banner-content {
-        position: absolute;
-        top: 60px;
-        width: 100%;
-    }
     @include mQ('200px', '700px'){
       height: 500px;
     }

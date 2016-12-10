@@ -301,266 +301,13 @@ header {
 
 /* line 216, ../SASS/master.scss */
 .banner {
-  width: 100%;
-  height: 755px;
-  position: relative;
   text-align: right;
 }
-/* line 33, ../SASS/mixin.scss */
-.banner .banner-content {
-  position: absolute;
-  top: 60px;
-  width: 100%;
-}
-@media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 216, ../SASS/master.scss */
-  .banner {
-    height: 500px;
-  }
-}
-@media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 216, ../SASS/master.scss */
-  .banner {
-    height: 400px;
-  }
-}
-@media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 216, ../SASS/master.scss */
-  .banner {
-    height: 600px;
-  }
-}
-/* line 48, ../SASS/mixin.scss */
-.banner img {
-  width: 100%;
-}
-/* line 220, ../SASS/master.scss */
-.banner .overlay {
-  width: 100%;
-  height: 750px;
-  background: url("../img/banner-1.png") no-repeat;
-  background-size: 100% 750px;
-  box-sizing: content-box;
-  z-index: 1;
-  opacity: 0.7;
-  position: relative;
-  top: 0;
-}
-@media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 220, ../SASS/master.scss */
-  .banner .overlay {
-    height: 202px;
-    top: 22px;
-    background-size: 100% 202px;
-  }
-}
-@media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 220, ../SASS/master.scss */
-  .banner .overlay {
-    height: 400px;
-    background-size: 100% 400px;
-  }
-}
-@media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 220, ../SASS/master.scss */
-  .banner .overlay {
-    height: 700px;
-    background-size: 100% 700px;
-  }
-}
-/* line 246, ../SASS/master.scss */
-.banner .con-left {
-  position: absolute;
-  width: 35%;
-  height: 460px;
-  background-color: transparent;
-  top: -25px;
-  left: 15px;
-  z-index: 3;
-  border-radius: 15px;
-  box-shadow: 2px 0 5px #000000;
-}
-@media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 246, ../SASS/master.scss */
-  .banner .con-left {
-    position: relative;
-    width: 85%;
-    margin: auto;
-    height: 180px;
-  }
-}
-@media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 246, ../SASS/master.scss */
-  .banner .con-left {
-    position: relative;
-    width: 40%;
-    top: 0px;
-    height: 300px;
-  }
-}
-/* line 270, ../SASS/master.scss */
-.banner .con-left h1 {
-  font-family: 'Anton', sans-serif;
-  color: black;
-  font-size: 24px;
-  width: 100%;
-  text-align: center;
-  position: relative;
-  margin: 20px;
-}
-@media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 270, ../SASS/master.scss */
-  .banner .con-left h1 {
-    font-size: 10px;
-    width: 100%;
-    position: relative;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 270, ../SASS/master.scss */
-  .banner .con-left h1 {
-    font-size: 16px;
-    width: 100%;
-    position: relative;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 270, ../SASS/master.scss */
-  .banner .con-left h1 {
-    font-size: 20px;
-    width: 100%;
-    position: relative;
-    text-align: center;
-  }
-}
-/* line 299, ../SASS/master.scss */
-.banner .con-left ul {
-  position: relative;
-  text-align: left;
-  width: 70%;
-  margin: auto;
-  text-align: center;
-  font-size: 1.4em;
-  border: 1px solid #000;
-}
-@media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 299, ../SASS/master.scss */
-  .banner .con-left ul {
-    font-size: 12px;
-  }
-}
-/* line 313, ../SASS/master.scss */
-.banner .circled-content {
-  position: absolute;
-  top: -30px;
-  left: 60%;
-  z-index: 1;
-  background-color: transparent;
-  width: 472px;
-  height: 472px;
-  border-radius: 50%;
-  box-shadow: -2px 2px 5px black;
-  -moz-box-shadow: -2px 2px 5px black;
-}
-/* line 325, ../SASS/master.scss */
-.banner .circled-content .sm-circle1 {
-  position: relative;
-  width: 172px;
-  height: 172px;
-  border-radius: 50%;
-  top: -30px;
-  left: -90px;
-  background-color: transparent;
-  box-shadow: -2px 2px 5px black;
-  -moz-box-shadow: -2px 2px 5px black;
-}
-@media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 325, ../SASS/master.scss */
-  .banner .circled-content .sm-circle1 {
-    width: 70px;
-    height: 70px;
-    top: 0px;
-    left: 100%;
-  }
-}
-@media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 325, ../SASS/master.scss */
-  .banner .circled-content .sm-circle1 {
-    width: 100px;
-    height: 100px;
-    top: 10px;
-    left: -70px;
-  }
-}
-@media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 325, ../SASS/master.scss */
-  .banner .circled-content .sm-circle1 {
-    left: -120px;
-  }
-}
-/* line 353, ../SASS/master.scss */
-.banner .circled-content .sm-circle2 {
-  position: relative;
-  z-index: 4;
-  width: 172px;
-  height: 172px;
-  border-radius: 50%;
-  top: 70px;
-  left: -145px;
-  background-color: inherit;
-  box-shadow: -2px 2px 5px black;
-  -moz-box-shadow: -2px 2px 5px black;
-}
-@media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 353, ../SASS/master.scss */
-  .banner .circled-content .sm-circle2 {
-    width: 70px;
-    height: 70px;
-    top: 70px;
-    left: -70px;
-  }
-}
-@media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 353, ../SASS/master.scss */
-  .banner .circled-content .sm-circle2 {
-    width: 100px;
-    height: 100px;
-    top: 50px;
-    left: -80px;
-  }
-}
-@media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 353, ../SASS/master.scss */
-  .banner .circled-content .sm-circle2 {
-    left: -120px;
-  }
-}
-@media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 313, ../SASS/master.scss */
-  .banner .circled-content {
-    width: 50%;
-    top: 200px;
-    height: 207px;
-    left: 27%;
-  }
-}
-@media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 313, ../SASS/master.scss */
-  .banner .circled-content {
-    width: 40%;
-    height: 300px;
-    left: 57%;
-  }
-}
-@media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 313, ../SASS/master.scss */
-  .banner .circled-content {
-    width: 430px;
-    height: 430px;
-    left: 52%;
-  }
+/* line 218, ../SASS/master.scss */
+.banner fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
   /* line 216, ../SASS/master.scss */
@@ -569,7 +316,7 @@ header {
   }
 }
 
-/* line 404, ../SASS/master.scss */
+/* line 228, ../SASS/master.scss */
 .wrapper {
   position: relative;
   margin-top: -0px;
@@ -578,18 +325,18 @@ header {
   box-shadow: inset 0em 2em 1.5em -1em gray;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 404, ../SASS/master.scss */
+  /* line 228, ../SASS/master.scss */
   .wrapper {
     margin-top: -2px;
   }
 }
-/* line 413, ../SASS/master.scss */
+/* line 237, ../SASS/master.scss */
 .wrapper .content {
   position: relative;
   margin-top: 20px;
 }
 
-/* line 419, ../SASS/master.scss */
+/* line 243, ../SASS/master.scss */
 .about figure {
   float: right;
   width: 520px;
@@ -603,7 +350,7 @@ header {
   padding: 10px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 419, ../SASS/master.scss */
+  /* line 243, ../SASS/master.scss */
   .about figure {
     width: 80%;
     margin: auto;
@@ -613,7 +360,7 @@ header {
   }
 }
 @media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 419, ../SASS/master.scss */
+  /* line 243, ../SASS/master.scss */
   .about figure {
     width: 80%;
     float: none;
@@ -622,7 +369,7 @@ header {
   }
 }
 @media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 419, ../SASS/master.scss */
+  /* line 243, ../SASS/master.scss */
   .about figure {
     width: 400px;
     left: 2%;
@@ -630,7 +377,7 @@ header {
     position: relative;
   }
 }
-/* line 451, ../SASS/master.scss */
+/* line 275, ../SASS/master.scss */
 .about figure img {
   position: absolute;
   top: 2%;
@@ -638,7 +385,7 @@ header {
   border-radius: 50%;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 451, ../SASS/master.scss */
+  /* line 275, ../SASS/master.scss */
   .about figure img {
     width: 98%;
     height: 98%;
@@ -647,7 +394,7 @@ header {
   }
 }
 @media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 451, ../SASS/master.scss */
+  /* line 275, ../SASS/master.scss */
   .about figure img {
     width: 98%;
     height: 98%;
@@ -656,7 +403,7 @@ header {
   }
 }
 @media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 451, ../SASS/master.scss */
+  /* line 275, ../SASS/master.scss */
   .about figure img {
     width: 400px;
     height: 400px;
@@ -666,7 +413,7 @@ header {
     position: relative;
   }
 }
-/* line 478, ../SASS/master.scss */
+/* line 302, ../SASS/master.scss */
 .about figure figcaption {
   position: absolute;
   width: 420px;
@@ -683,21 +430,21 @@ header {
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 478, ../SASS/master.scss */
+  /* line 302, ../SASS/master.scss */
   .about figure figcaption {
     font-size: 10px;
     width: 100%;
   }
 }
 @media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 478, ../SASS/master.scss */
+  /* line 302, ../SASS/master.scss */
   .about figure figcaption {
     font-size: 14px;
     width: 100%;
   }
 }
 @media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 478, ../SASS/master.scss */
+  /* line 302, ../SASS/master.scss */
   .about figure figcaption {
     font-size: 17px;
     width: 420px;
@@ -706,11 +453,11 @@ header {
   }
 }
 
-/* line 510, ../SASS/master.scss */
+/* line 334, ../SASS/master.scss */
 .committee {
   margin-bottom: 60px;
 }
-/* line 512, ../SASS/master.scss */
+/* line 336, ../SASS/master.scss */
 .committee ul {
   margin: auto;
   -webkit-align-content: center;
@@ -729,12 +476,12 @@ header {
   padding-bottom: 80px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 512, ../SASS/master.scss */
+  /* line 336, ../SASS/master.scss */
   .committee ul {
     width: 300px;
   }
 }
-/* line 523, ../SASS/master.scss */
+/* line 347, ../SASS/master.scss */
 .committee ul li {
   float: left;
   box-sizing: border-box;
@@ -748,7 +495,7 @@ header {
   -moz-box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 523, ../SASS/master.scss */
+  /* line 347, ../SASS/master.scss */
   .committee ul li {
     width: 90%;
     margin: 25px auto;
@@ -758,7 +505,7 @@ header {
   }
 }
 @media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 523, ../SASS/master.scss */
+  /* line 347, ../SASS/master.scss */
   .committee ul li {
     width: 50%;
     margin: unset;
@@ -766,14 +513,14 @@ header {
   }
 }
 @media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 523, ../SASS/master.scss */
+  /* line 347, ../SASS/master.scss */
   .committee ul li {
     width: 33.33333%;
     margin: unset;
     border-radius: 10px;
   }
 }
-/* line 552, ../SASS/master.scss */
+/* line 376, ../SASS/master.scss */
 .committee ul img {
   width: 50%;
   margin: 20px 20%;
@@ -784,7 +531,7 @@ header {
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 552, ../SASS/master.scss */
+  /* line 376, ../SASS/master.scss */
   .committee ul img {
     float: none;
     width: 80%;
@@ -794,7 +541,7 @@ header {
   }
 }
 @media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 552, ../SASS/master.scss */
+  /* line 376, ../SASS/master.scss */
   .committee ul img {
     float: none;
     width: 80%;
@@ -804,7 +551,7 @@ header {
   }
 }
 @media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 552, ../SASS/master.scss */
+  /* line 376, ../SASS/master.scss */
   .committee ul img {
     float: none;
     width: 80%;
@@ -813,7 +560,7 @@ header {
     border: 0;
   }
 }
-/* line 585, ../SASS/master.scss */
+/* line 409, ../SASS/master.scss */
 .committee .positions {
   width: 100%;
   font-size: 17px;
@@ -821,29 +568,29 @@ header {
   margin-top: 9px;
   text-align: center;
 }
-/* line 593, ../SASS/master.scss */
+/* line 417, ../SASS/master.scss */
 .committee a {
   text-decoration: none;
   color: #e5e8f0;
   font-weight: bold;
 }
-/* line 597, ../SASS/master.scss */
+/* line 421, ../SASS/master.scss */
 .committee a:hover {
   color: #f0ece5;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 510, ../SASS/master.scss */
+  /* line 334, ../SASS/master.scss */
   .committee {
     margin-bottom: 10px;
     padding-bottom: -20px;
   }
 }
 
-/* line 609, ../SASS/master.scss */
+/* line 433, ../SASS/master.scss */
 .gallery {
   margin-bottom: 60px;
 }
-/* line 611, ../SASS/master.scss */
+/* line 435, ../SASS/master.scss */
 .gallery .bridgeGL {
   width: 80%;
   margin: 40px auto;
@@ -855,19 +602,19 @@ header {
   padding-left: 100px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 611, ../SASS/master.scss */
+  /* line 435, ../SASS/master.scss */
   .gallery .bridgeGL {
     padding: unset;
   }
 }
-/* line 620, ../SASS/master.scss */
+/* line 444, ../SASS/master.scss */
 .gallery .bridgeGL li {
   display: inline;
   margin-left: 5px;
   line-height: 120px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 620, ../SASS/master.scss */
+  /* line 444, ../SASS/master.scss */
   .gallery .bridgeGL li {
     display: block;
     width: 80%;
@@ -876,12 +623,12 @@ header {
     line-height: unset;
   }
 }
-/* line 631, ../SASS/master.scss */
+/* line 455, ../SASS/master.scss */
 .gallery .bridgeGL li:hover {
   box-shadow: 1px 12px 5px #464646;
   border-radius: 15px;
 }
-/* line 635, ../SASS/master.scss */
+/* line 459, ../SASS/master.scss */
 .gallery .bridgeGL li img {
   position: relative;
   left: -3.5px;
@@ -894,7 +641,7 @@ header {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 635, ../SASS/master.scss */
+  /* line 459, ../SASS/master.scss */
   .gallery .bridgeGL li img {
     width: 90%;
     margin-left: 5.5%;
@@ -902,11 +649,11 @@ header {
   }
 }
 
-/* line 654, ../SASS/master.scss */
+/* line 478, ../SASS/master.scss */
 .contact {
   height: auto;
 }
-/* line 656, ../SASS/master.scss */
+/* line 480, ../SASS/master.scss */
 .contact p {
   text-align: center;
   width: 100%;
@@ -914,7 +661,7 @@ header {
   clear: both;
   margin: -70px 0 100px 0;
 }
-/* line 664, ../SASS/master.scss */
+/* line 488, ../SASS/master.scss */
 .contact #map {
   position: relative;
   height: 400px;
@@ -922,7 +669,7 @@ header {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* line 673, ../SASS/master.scss */
+/* line 497, ../SASS/master.scss */
 section {
   position: relative;
   width: 95%;
@@ -935,14 +682,14 @@ section {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 1em -10px 1em -1em #f5f6f9
   /* background:red */
 }
-/* line 63, ../SASS/mixin.scss */
+/* line 58, ../SASS/mixin.scss */
 section .about {
   background-color: transparent;
   font-family: sans-serif;
   font-size: 14px;
   color: black;
 }
-/* line 70, ../SASS/mixin.scss */
+/* line 65, ../SASS/mixin.scss */
 section .title {
   position: relative;
   width: 50%;
@@ -962,7 +709,7 @@ section .title {
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 70, ../SASS/mixin.scss */
+  /* line 65, ../SASS/mixin.scss */
   section .title {
     width: 80%;
     font-size: 18px;
@@ -971,7 +718,7 @@ section .title {
   }
 }
 @media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 70, ../SASS/mixin.scss */
+  /* line 65, ../SASS/mixin.scss */
   section .title {
     width: 50%;
     font-size: 19.8px;
@@ -979,7 +726,7 @@ section .title {
     padding-top: 25px;
   }
 }
-/* line 101, ../SASS/mixin.scss */
+/* line 96, ../SASS/mixin.scss */
 section p {
   position: relative;
   top: 70px;
@@ -987,7 +734,7 @@ section p {
   float: left;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 101, ../SASS/mixin.scss */
+  /* line 96, ../SASS/mixin.scss */
   section p {
     width: 90%;
     margin: 50px auto;
@@ -997,7 +744,7 @@ section p {
   }
 }
 @media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 101, ../SASS/mixin.scss */
+  /* line 96, ../SASS/mixin.scss */
   section p {
     width: 90%;
     margin: 50px auto;
@@ -1007,7 +754,7 @@ section p {
   }
 }
 @media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 101, ../SASS/mixin.scss */
+  /* line 96, ../SASS/mixin.scss */
   section p {
     width: 90%;
     margin: auto;
@@ -1023,7 +770,7 @@ section:after {
   padding-bottom: 80px;
 }
 
-/* line 678, ../SASS/master.scss */
+/* line 502, ../SASS/master.scss */
 #div1 p {
   display: block;
   width: 100%;
@@ -1031,7 +778,7 @@ section:after {
   margin: 20px 0;
 }
 
-/* line 685, ../SASS/master.scss */
+/* line 509, ../SASS/master.scss */
 .register {
   position: relative;
   width: 91%;
@@ -1050,7 +797,7 @@ section:after {
   padding-bottom: 80px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 685, ../SASS/master.scss */
+  /* line 509, ../SASS/master.scss */
   .register {
     width: 100%;
     border-radius: 15px;
@@ -1060,12 +807,12 @@ section:after {
   }
 }
 @media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 685, ../SASS/master.scss */
+  /* line 509, ../SASS/master.scss */
   .register {
     width: 100%;
   }
 }
-/* line 705, ../SASS/master.scss */
+/* line 529, ../SASS/master.scss */
 .register p {
   width: 70%;
   margin: -10px auto;
@@ -1076,13 +823,13 @@ section:after {
   font-weight: 500;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 705, ../SASS/master.scss */
+  /* line 529, ../SASS/master.scss */
   .register p {
     visibility: visible;
     z-index: 10;
   }
 }
-/* line 718, ../SASS/master.scss */
+/* line 542, ../SASS/master.scss */
 .register .formL {
   position: relative;
   width: 45%;
@@ -1092,7 +839,7 @@ section:after {
   padding-top: 20px;
   padding-left: 20px;
 }
-/* line 731, ../SASS/master.scss */
+/* line 555, ../SASS/master.scss */
 .register .formL #infos {
   position: relative;
   top: 319px;
@@ -1109,12 +856,12 @@ section:after {
   cursor: default;
   box-shadow: 0px 0px 1px black;
 }
-/* line 746, ../SASS/master.scss */
+/* line 570, ../SASS/master.scss */
 .register .formL #infos:hover, .register .formL #infos:active {
   box-shadow: 0px 0px 15px black;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 718, ../SASS/master.scss */
+  /* line 542, ../SASS/master.scss */
   .register .formL {
     width: 100%;
     margin: auto;
@@ -1124,12 +871,12 @@ section:after {
   }
 }
 @media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 718, ../SASS/master.scss */
+  /* line 542, ../SASS/master.scss */
   .register .formL {
     width: 60%;
   }
 }
-/* line 763, ../SASS/master.scss */
+/* line 587, ../SASS/master.scss */
 .register .formL #Preview {
   position: relative;
   clear: both;
@@ -1142,13 +889,13 @@ section:after {
   -moz-box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 763, ../SASS/master.scss */
+  /* line 587, ../SASS/master.scss */
   .register .formL #Preview {
     float: none;
     margin: auto;
   }
 }
-/* line 779, ../SASS/master.scss */
+/* line 603, ../SASS/master.scss */
 .register .formR {
   position: absolute;
   top: 20px;
@@ -1161,7 +908,7 @@ section:after {
   border-radius: 25px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 779, ../SASS/master.scss */
+  /* line 603, ../SASS/master.scss */
   .register .formR {
     position: relative;
     display: none;
@@ -1174,7 +921,7 @@ section:after {
   }
 }
 @media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 779, ../SASS/master.scss */
+  /* line 603, ../SASS/master.scss */
   .register .formR {
     display: none;
     top: -500px;
@@ -1186,14 +933,14 @@ section:after {
   }
 }
 @media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 779, ../SASS/master.scss */
+  /* line 603, ../SASS/master.scss */
   .register .formR {
     width: 37%;
     border: 2px black solid;
     visibility: visible;
   }
 }
-/* line 822, ../SASS/master.scss */
+/* line 646, ../SASS/master.scss */
 .register .formR #theerror {
   position: relative;
   clear: both;
@@ -1205,7 +952,7 @@ section:after {
   text-align: center;
   height: auto;
 }
-/* line 832, ../SASS/master.scss */
+/* line 656, ../SASS/master.scss */
 .register .formR #theerror p {
   position: relative;
   margin: 0 auto;
@@ -1215,7 +962,7 @@ section:after {
   line-height: unset;
   top: unset;
 }
-/* line 843, ../SASS/master.scss */
+/* line 667, ../SASS/master.scss */
 .register .formcont {
   position: relative;
   clear: both;
@@ -1227,24 +974,24 @@ section:after {
   z-index: 10;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 843, ../SASS/master.scss */
+  /* line 667, ../SASS/master.scss */
   .register .formcont {
     height: auto;
   }
 }
 @media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 843, ../SASS/master.scss */
+  /* line 667, ../SASS/master.scss */
   .register .formcont {
     height: auto;
   }
 }
 @media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 843, ../SASS/master.scss */
+  /* line 667, ../SASS/master.scss */
   .register .formcont {
     height: auto;
   }
 }
-/* line 867, ../SASS/master.scss */
+/* line 691, ../SASS/master.scss */
 .register .formcont #user-result, .register .formcont #user-email, .register .formcont #user-result2 {
   position: relative;
   top: 3px;
@@ -1256,14 +1003,14 @@ section:after {
   font-size: 12px;
   height: 30px;
 }
-/* line 878, ../SASS/master.scss */
+/* line 702, ../SASS/master.scss */
 .register .formcont fieldset {
   width: 42%;
   float: left;
   margin-left: 20px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 878, ../SASS/master.scss */
+  /* line 702, ../SASS/master.scss */
   .register .formcont fieldset {
     display: block;
     float: left;
@@ -1273,42 +1020,42 @@ section:after {
   }
 }
 @media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 878, ../SASS/master.scss */
+  /* line 702, ../SASS/master.scss */
   .register .formcont fieldset {
     width: 40%;
   }
 }
-/* line 892, ../SASS/master.scss */
+/* line 716, ../SASS/master.scss */
 .register .formcont fieldset input {
   float: left;
   clear: right;
 }
-/* line 896, ../SASS/master.scss */
+/* line 720, ../SASS/master.scss */
 .register .formcont fieldset label {
   float: left;
   clear: left;
   line-height: 20px;
   width: 100px;
 }
-/* line 903, ../SASS/master.scss */
+/* line 727, ../SASS/master.scss */
 .register .formcont .rightit {
   position: relative;
   padding-left: 120px;
   box-sizing: padding-box;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 903, ../SASS/master.scss */
+  /* line 727, ../SASS/master.scss */
   .register .formcont .rightit {
     padding: 0;
   }
 }
 @media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 903, ../SASS/master.scss */
+  /* line 727, ../SASS/master.scss */
   .register .formcont .rightit {
     padding: 0;
   }
 }
-/* line 915, ../SASS/master.scss */
+/* line 739, ../SASS/master.scss */
 .register form {
   position: relative;
   top: 10px;
@@ -1316,7 +1063,7 @@ section:after {
   margin: auto;
   padding-top: 20px;
 }
-/* line 921, ../SASS/master.scss */
+/* line 745, ../SASS/master.scss */
 .register form label {
   position: relative;
   cursor: default;
@@ -1345,7 +1092,7 @@ section:after {
   -moz-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 921, ../SASS/master.scss */
+  /* line 745, ../SASS/master.scss */
   .register form label {
     font-size: 10px;
     font-family: sans-serif;
@@ -1356,7 +1103,7 @@ section:after {
     margin: 9px 0;
   }
 }
-/* line 958, ../SASS/master.scss */
+/* line 782, ../SASS/master.scss */
 .register form input {
   position: relative;
   font-family: serif;
@@ -1379,19 +1126,19 @@ section:after {
   -webkit-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
 }
-/* line 979, ../SASS/master.scss */
+/* line 803, ../SASS/master.scss */
 .register form input[type="text"] {
   text-align: left;
   width: 200px;
   letter-spacing: 0px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 979, ../SASS/master.scss */
+  /* line 803, ../SASS/master.scss */
   .register form input[type="text"] {
     width: 180px;
   }
 }
-/* line 987, ../SASS/master.scss */
+/* line 811, ../SASS/master.scss */
 .register form input[type="submit"] {
   position: relative;
   left: -150px;
@@ -1412,24 +1159,24 @@ section:after {
   background-image: linear-gradient(top, #fefefe 0%, #cecece 23%, #cecece 79%, #fefefe 100%);
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 987, ../SASS/master.scss */
+  /* line 811, ../SASS/master.scss */
   .register form input[type="submit"] {
     left: 0;
   }
 }
-/* line 1008, ../SASS/master.scss */
+/* line 832, ../SASS/master.scss */
 .register form input[type="email"] {
   text-align: left;
   width: 200px;
   letter-spacing: 0px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 1008, ../SASS/master.scss */
+  /* line 832, ../SASS/master.scss */
   .register form input[type="email"] {
     width: 180px;
   }
 }
-/* line 1016, ../SASS/master.scss */
+/* line 840, ../SASS/master.scss */
 .register form input[type="file"] {
   overflow: hidden;
   position: relative;
@@ -1438,27 +1185,27 @@ section:after {
   height: 0.1px;
   opacity: 0;
 }
-/* line 1024, ../SASS/master.scss */
+/* line 848, ../SASS/master.scss */
 .register form input:hover {
   border: 0;
 }
-/* line 1027, ../SASS/master.scss */
+/* line 851, ../SASS/master.scss */
 .register form input:active {
   border: 0;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 958, ../SASS/master.scss */
+  /* line 782, ../SASS/master.scss */
   .register form input {
     font-size: 12px;
     padding: 11px 0px 9px 0px;
     margin: 12px 0;
   }
 }
-/* line 1036, ../SASS/master.scss */
+/* line 860, ../SASS/master.scss */
 .register form button {
   height: 3px;
 }
-/* line 1039, ../SASS/master.scss */
+/* line 863, ../SASS/master.scss */
 .register form textarea {
   position: relative;
   float: left;
@@ -1481,7 +1228,7 @@ section:after {
   -moz-appearance: none;
   appearance: none;
 }
-/* line 1061, ../SASS/master.scss */
+/* line 885, ../SASS/master.scss */
 .register form select {
   position: relative;
   font-family: serif;
@@ -1509,23 +1256,23 @@ section:after {
   -moz-appearance: none;
   appearance: none;
 }
-/* line 1088, ../SASS/master.scss */
+/* line 912, ../SASS/master.scss */
 .register form fieldset {
   width: 100%;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 1091, ../SASS/master.scss */
+  /* line 915, ../SASS/master.scss */
   .register form fieldset span {
     float: left;
     clear: both;
   }
 }
-/* line 1096, ../SASS/master.scss */
+/* line 920, ../SASS/master.scss */
 .register form fieldset .bd {
   width: 70px;
   margin: 0;
 }
-/* line 1100, ../SASS/master.scss */
+/* line 924, ../SASS/master.scss */
 .register form fieldset select {
   float: left;
   padding-top: 11px;
@@ -1534,13 +1281,13 @@ section:after {
   padding-left: 8px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 1100, ../SASS/master.scss */
+  /* line 924, ../SASS/master.scss */
   .register form fieldset select {
     float: left;
     clear: both;
   }
 }
-/* line 1111, ../SASS/master.scss */
+/* line 935, ../SASS/master.scss */
 .register form fieldset label {
   width: 50px;
   font-size: 10px;
@@ -1549,17 +1296,17 @@ section:after {
   margin-left: 10px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 1111, ../SASS/master.scss */
+  /* line 935, ../SASS/master.scss */
   .register form fieldset label {
     float: left;
     clear: both;
   }
 }
-/* line 1122, ../SASS/master.scss */
+/* line 946, ../SASS/master.scss */
 .register form fieldset .aging {
   line-height: 25px;
 }
-/* line 1125, ../SASS/master.scss */
+/* line 949, ../SASS/master.scss */
 .register form fieldset input {
   width: 80px;
   line-height: 25px;
@@ -1568,13 +1315,13 @@ section:after {
   clear: none;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 1125, ../SASS/master.scss */
+  /* line 949, ../SASS/master.scss */
   .register form fieldset input {
     float: none;
     clear: both;
   }
 }
-/* line 1137, ../SASS/master.scss */
+/* line 961, ../SASS/master.scss */
 .register form .pslb {
   cursor: pointer;
   width: auto;
@@ -1590,11 +1337,11 @@ section:after {
   -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* line 1154, ../SASS/master.scss */
+/* line 978, ../SASS/master.scss */
 .mobileReg {
   position: relative;
 }
-/* line 1156, ../SASS/master.scss */
+/* line 980, ../SASS/master.scss */
 .mobileReg #theerror {
   position: relative;
   clear: both;
@@ -1606,7 +1353,7 @@ section:after {
   text-align: center;
   height: auto;
 }
-/* line 1166, ../SASS/master.scss */
+/* line 990, ../SASS/master.scss */
 .mobileReg #theerror p {
   position: relative;
   margin: 0 auto;
@@ -1616,11 +1363,11 @@ section:after {
   line-height: unset;
   top: unset;
 }
-/* line 1177, ../SASS/master.scss */
+/* line 1001, ../SASS/master.scss */
 .mobileReg form {
   width: 100%;
 }
-/* line 1179, ../SASS/master.scss */
+/* line 1003, ../SASS/master.scss */
 .mobileReg form #Preview {
   position: relative;
   clear: both;
@@ -1632,7 +1379,7 @@ section:after {
   -webkit-box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.9);
 }
-/* line 1190, ../SASS/master.scss */
+/* line 1014, ../SASS/master.scss */
 .mobileReg form #user-result {
   position: relative;
   top: 32px;
@@ -1644,7 +1391,7 @@ section:after {
   font-size: 12px;
   height: 30px;
 }
-/* line 1201, ../SASS/master.scss */
+/* line 1025, ../SASS/master.scss */
 .mobileReg form #user-result2 {
   position: relative;
   top: 32px;
@@ -1656,7 +1403,7 @@ section:after {
   font-size: 12px;
   height: 30px;
 }
-/* line 1212, ../SASS/master.scss */
+/* line 1036, ../SASS/master.scss */
 .mobileReg form #user-email {
   position: relative;
   top: 32px;
@@ -1668,7 +1415,7 @@ section:after {
   font-size: 12px;
   height: 30px;
 }
-/* line 1223, ../SASS/master.scss */
+/* line 1047, ../SASS/master.scss */
 .mobileReg form #infos {
   position: relative;
   top: 32px;
@@ -1684,11 +1431,11 @@ section:after {
   cursor: default;
   box-shadow: 0px 0px 1px black;
 }
-/* line 1237, ../SASS/master.scss */
+/* line 1061, ../SASS/master.scss */
 .mobileReg form #infos:hover, .mobileReg form #infos:active {
   box-shadow: 0px 0px 15px black;
 }
-/* line 1241, ../SASS/master.scss */
+/* line 1065, ../SASS/master.scss */
 .mobileReg form input {
   width: 100%;
   float: left;
@@ -1700,7 +1447,7 @@ section:after {
   border-radius: 10px;
   padding: 5px 4px;
 }
-/* line 1251, ../SASS/master.scss */
+/* line 1075, ../SASS/master.scss */
 .mobileReg form input[type="file"] {
   overflow: hidden;
   position: relative;
@@ -1709,7 +1456,7 @@ section:after {
   height: 0.1px;
   opacity: 0;
 }
-/* line 1259, ../SASS/master.scss */
+/* line 1083, ../SASS/master.scss */
 .mobileReg form input[type="submit"] {
   width: 60%;
   top: 10px;
@@ -1727,7 +1474,7 @@ section:after {
   -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
 }
-/* line 1275, ../SASS/master.scss */
+/* line 1099, ../SASS/master.scss */
 .mobileReg form input[type="text"], .mobileReg form input[type="email"] {
   border: 1px solid #ccc;
   background-color: #fff;
@@ -1735,7 +1482,7 @@ section:after {
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
 }
-/* line 1283, ../SASS/master.scss */
+/* line 1107, ../SASS/master.scss */
 .mobileReg form select {
   float: left;
   clear: both;
@@ -1749,7 +1496,7 @@ section:after {
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
 }
-/* line 1296, ../SASS/master.scss */
+/* line 1120, ../SASS/master.scss */
 .mobileReg form textarea {
   float: left;
   clear: both;
@@ -1763,7 +1510,7 @@ section:after {
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
 }
-/* line 1309, ../SASS/master.scss */
+/* line 1133, ../SASS/master.scss */
 .mobileReg form label {
   float: left;
   clear: both;
@@ -1779,13 +1526,13 @@ section:after {
   -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
 }
-/* line 1325, ../SASS/master.scss */
+/* line 1149, ../SASS/master.scss */
 .mobileReg form .pslb {
   background-color: transparent;
   box-shadow: none;
 }
 
-/* line 1333, ../SASS/master.scss */
+/* line 1157, ../SASS/master.scss */
 footer {
   width: 100%;
   height: 220px;
@@ -1794,18 +1541,18 @@ footer {
   box-shadow: 0 -17px 11px -5px rgba(0, 0, 0, 0.75), inset 0 27px 21px -10px #706c70;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 1333, ../SASS/master.scss */
+  /* line 1157, ../SASS/master.scss */
   footer {
     height: 160px;
   }
 }
-/* line 1345, ../SASS/master.scss */
+/* line 1169, ../SASS/master.scss */
 footer .content {
   margin: auto;
   width: 100%;
   position: relative;
 }
-/* line 1349, ../SASS/master.scss */
+/* line 1173, ../SASS/master.scss */
 footer .content ul {
   width: 40%;
   text-align: center;
@@ -1819,13 +1566,13 @@ footer .content ul {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 1349, ../SASS/master.scss */
+  /* line 1173, ../SASS/master.scss */
   footer .content ul {
     top: 40px;
     width: 85%;
   }
 }
-/* line 1367, ../SASS/master.scss */
+/* line 1191, ../SASS/master.scss */
 footer .content li {
   width: 33.33333%;
   display: inline;
@@ -1833,16 +1580,16 @@ footer .content li {
   margin: 8%;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 1367, ../SASS/master.scss */
+  /* line 1191, ../SASS/master.scss */
   footer .content li {
     width: 100% / 3;
   }
-  /* line 1374, ../SASS/master.scss */
+  /* line 1198, ../SASS/master.scss */
   footer .content li img {
     width: 10%;
   }
 }
-/* line 1381, ../SASS/master.scss */
+/* line 1205, ../SASS/master.scss */
 footer .content .below {
   width: 100%;
   position: relative;
@@ -1853,12 +1600,12 @@ footer .content .below {
   top: 80px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 1381, ../SASS/master.scss */
+  /* line 1205, ../SASS/master.scss */
   footer .content .below {
     top: 50px;
   }
 }
-/* line 1389, ../SASS/master.scss */
+/* line 1213, ../SASS/master.scss */
 footer .content .below p {
   width: 80%;
   text-align: center;
@@ -1867,12 +1614,12 @@ footer .content .below p {
   margin: 0px auto 20px auto;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 1389, ../SASS/master.scss */
+  /* line 1213, ../SASS/master.scss */
   footer .content .below p {
     font-size: 12px;
   }
 }
-/* line 1398, ../SASS/master.scss */
+/* line 1222, ../SASS/master.scss */
 footer .content .below p span {
   text-transform: uppercase;
   font-weight: bold;

@@ -91,7 +91,7 @@ $('#passport').change(function(event) {
               $('#submit').attr('disabled', '');
               $('#submit').val('Successful...');
               setTimeout(function () {
-                window.location.href = 'index.html';
+                window.location.href = 'confirmed.html';
               }, 3000);
 
             }

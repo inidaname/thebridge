@@ -48,13 +48,13 @@ header {
   width: 100%;
   height: 75px;
   background-color: #e5e8f0;
-  background-image: -webkit-linear-gradient(top, #cecaca, #f3f2f2);
   background-image: linear-gradient(to bottom, #cecaca, #f3f2f2);
   position: relative;
   -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
   animation-duration: 2s;
   z-index: 100;
-  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2), inset 0 -10px 1em -1em #4e6188
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2), inset 0 -10px 1em -1em #4e6188;
   /* background:red */
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
@@ -187,6 +187,7 @@ header {
   margin-right: auto;
   z-index: 1;
   -webkit-animation-duration: 2.5s;
+  -moz-animation-duration: 2.5s;
   animation-duration: 2.5s;
   animation-delay: 1.5s;
   -webkit-animation-delay: 1.5s;
@@ -280,7 +281,7 @@ header {
   position: relative;
   overflow: hidden;
   background-color: #e5e8f0;
-  box-shadow: 5px 0 1px rgba(0, 0, 0, 0.2), inset 1em -10px 1em -1em #f5f6f9
+  box-shadow: 5px 0 1px rgba(0, 0, 0, 0.2), inset 1em -10px 1em -1em #f5f6f9;
   /* background:red */
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
@@ -307,8 +308,7 @@ header {
 /* line 219, ../SASS/master.scss */
 .banner figure {
   position: absolute;
-  -webkit-animation: round 30s infinite;
-          animation: round 30s infinite;
+  animation: round 30s infinite;
   opacity: 0;
   width: 100%;
   height: 100%;
@@ -322,15 +322,6 @@ header {
   }
 }
 
-@-webkit-keyframes round {
-  25% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 0;
-  }
-}
-
 @keyframes round {
   25% {
     opacity: 1;
@@ -341,26 +332,22 @@ header {
 }
 /* line 242, ../SASS/master.scss */
 figure:nth-child(1) {
-  -webkit-animation-delay: 15s;
-          animation-delay: 15s;
+  animation-delay: 15s;
 }
 
 /* line 246, ../SASS/master.scss */
 figure:nth-child(2) {
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
+  animation-delay: 10s;
 }
 
 /* line 250, ../SASS/master.scss */
 figure:nth-child(3) {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  animation-delay: 5s;
 }
 
 /* line 254, ../SASS/master.scss */
 figure:nth-child(4) {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 /* line 258, ../SASS/master.scss */
@@ -500,16 +487,58 @@ figure:nth-child(4) {
   }
 }
 
-/* line 364, ../SASS/master.scss */
+/* line 365, ../SASS/master.scss */
+#userdata {
+  position: relative;
+  width: 80%;
+  height: 300px;
+  margin: auto;
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 200px) and (max-width: 700px) {
+  /* line 365, ../SASS/master.scss */
+  #userdata {
+    width: 100%;
+    height: auto;
+  }
+}
+/* line 376, ../SASS/master.scss */
+#userdata img {
+  position: relative;
+  width: 145px;
+  height: 145px;
+  float: left;
+  left: 50px;
+  top: 50px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+/* line 386, ../SASS/master.scss */
+#userdata div {
+  position: relative;
+  float: left;
+  left: 70px;
+  top: 50px;
+  width: 50%;
+}
+/* line 392, ../SASS/master.scss */
+#userdata div h1 {
+  width: 100%;
+}
+/* line 395, ../SASS/master.scss */
+#userdata div span {
+  width: 100%;
+}
+
+/* line 402, ../SASS/master.scss */
 .committee {
   margin-bottom: 60px;
 }
-/* line 366, ../SASS/master.scss */
+/* line 404, ../SASS/master.scss */
 .committee ul {
   margin: auto;
-  -webkit-align-content: center;
-      -ms-flex-line-pack: center;
-          align-content: center;
+  align-content: center;
   float: none;
   box-sizing: border-box;
   position: relative;
@@ -523,12 +552,12 @@ figure:nth-child(4) {
   padding-bottom: 80px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 366, ../SASS/master.scss */
+  /* line 404, ../SASS/master.scss */
   .committee ul {
     width: 300px;
   }
 }
-/* line 377, ../SASS/master.scss */
+/* line 415, ../SASS/master.scss */
 .committee ul li {
   float: left;
   box-sizing: border-box;
@@ -542,7 +571,7 @@ figure:nth-child(4) {
   -moz-box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 377, ../SASS/master.scss */
+  /* line 415, ../SASS/master.scss */
   .committee ul li {
     width: 90%;
     margin: 25px auto;
@@ -552,7 +581,7 @@ figure:nth-child(4) {
   }
 }
 @media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 377, ../SASS/master.scss */
+  /* line 415, ../SASS/master.scss */
   .committee ul li {
     width: 50%;
     margin: unset;
@@ -560,14 +589,14 @@ figure:nth-child(4) {
   }
 }
 @media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 377, ../SASS/master.scss */
+  /* line 415, ../SASS/master.scss */
   .committee ul li {
     width: 33.33333%;
     margin: unset;
     border-radius: 10px;
   }
 }
-/* line 406, ../SASS/master.scss */
+/* line 444, ../SASS/master.scss */
 .committee ul img {
   width: 50%;
   margin: 20px 20%;
@@ -578,7 +607,7 @@ figure:nth-child(4) {
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 406, ../SASS/master.scss */
+  /* line 444, ../SASS/master.scss */
   .committee ul img {
     float: none;
     width: 80%;
@@ -588,7 +617,7 @@ figure:nth-child(4) {
   }
 }
 @media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 406, ../SASS/master.scss */
+  /* line 444, ../SASS/master.scss */
   .committee ul img {
     float: none;
     width: 80%;
@@ -598,7 +627,7 @@ figure:nth-child(4) {
   }
 }
 @media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 406, ../SASS/master.scss */
+  /* line 444, ../SASS/master.scss */
   .committee ul img {
     float: none;
     width: 80%;
@@ -607,7 +636,7 @@ figure:nth-child(4) {
     border: 0;
   }
 }
-/* line 439, ../SASS/master.scss */
+/* line 477, ../SASS/master.scss */
 .committee .positions {
   width: 100%;
   font-size: 17px;
@@ -615,53 +644,50 @@ figure:nth-child(4) {
   margin-top: 9px;
   text-align: center;
 }
-/* line 447, ../SASS/master.scss */
+/* line 485, ../SASS/master.scss */
 .committee a {
   text-decoration: none;
   color: #e5e8f0;
   font-weight: bold;
 }
-/* line 451, ../SASS/master.scss */
+/* line 489, ../SASS/master.scss */
 .committee a:hover {
   color: #f0ece5;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 364, ../SASS/master.scss */
+  /* line 402, ../SASS/master.scss */
   .committee {
     margin-bottom: 10px;
     padding-bottom: -20px;
   }
 }
 
-/* line 463, ../SASS/master.scss */
+/* line 501, ../SASS/master.scss */
 .gallery {
   margin-bottom: 60px;
 }
-/* line 465, ../SASS/master.scss */
+/* line 503, ../SASS/master.scss */
 .gallery .bridgeGL {
   width: 80%;
   margin: 40px auto;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 15px;
   padding-left: 100px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 465, ../SASS/master.scss */
+  /* line 503, ../SASS/master.scss */
   .gallery .bridgeGL {
     padding: unset;
   }
 }
-/* line 474, ../SASS/master.scss */
+/* line 512, ../SASS/master.scss */
 .gallery .bridgeGL li {
   display: inline;
   margin-left: 5px;
   line-height: 120px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 474, ../SASS/master.scss */
+  /* line 512, ../SASS/master.scss */
   .gallery .bridgeGL li {
     display: block;
     width: 80%;
@@ -670,12 +696,12 @@ figure:nth-child(4) {
     line-height: unset;
   }
 }
-/* line 485, ../SASS/master.scss */
+/* line 523, ../SASS/master.scss */
 .gallery .bridgeGL li:hover {
   box-shadow: 1px 12px 5px #464646;
   border-radius: 15px;
 }
-/* line 489, ../SASS/master.scss */
+/* line 527, ../SASS/master.scss */
 .gallery .bridgeGL li img {
   position: relative;
   left: -3.5px;
@@ -688,7 +714,7 @@ figure:nth-child(4) {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 489, ../SASS/master.scss */
+  /* line 527, ../SASS/master.scss */
   .gallery .bridgeGL li img {
     width: 90%;
     margin-left: 5.5%;
@@ -696,11 +722,11 @@ figure:nth-child(4) {
   }
 }
 
-/* line 508, ../SASS/master.scss */
+/* line 546, ../SASS/master.scss */
 .contact {
   height: auto;
 }
-/* line 510, ../SASS/master.scss */
+/* line 548, ../SASS/master.scss */
 .contact p {
   text-align: center;
   width: 100%;
@@ -708,15 +734,17 @@ figure:nth-child(4) {
   clear: both;
   margin: -70px 0 100px 0;
 }
-/* line 518, ../SASS/master.scss */
+/* line 556, ../SASS/master.scss */
 .contact #map {
   position: relative;
   height: 400px;
   width: 100%;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* line 527, ../SASS/master.scss */
+/* line 565, ../SASS/master.scss */
 section {
   position: relative;
   width: 95%;
@@ -726,7 +754,7 @@ section {
   border-radius: 25px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 1em -10px 1em -1em #f5f6f9;
   /* background:red */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 1em -10px 1em -1em #f5f6f9
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 1em -10px 1em -1em #f5f6f9;
   /* background:red */
 }
 /* line 58, ../SASS/mixin.scss */
@@ -817,7 +845,7 @@ section:after {
   padding-bottom: 80px;
 }
 
-/* line 532, ../SASS/master.scss */
+/* line 570, ../SASS/master.scss */
 #div1 p {
   display: block;
   width: 100%;
@@ -825,7 +853,7 @@ section:after {
   margin: 20px 0;
 }
 
-/* line 539, ../SASS/master.scss */
+/* line 577, ../SASS/master.scss */
 .register {
   position: relative;
   width: 91%;
@@ -844,7 +872,7 @@ section:after {
   padding-bottom: 80px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 539, ../SASS/master.scss */
+  /* line 577, ../SASS/master.scss */
   .register {
     width: 100%;
     border-radius: 15px;
@@ -854,12 +882,12 @@ section:after {
   }
 }
 @media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 539, ../SASS/master.scss */
+  /* line 577, ../SASS/master.scss */
   .register {
     width: 100%;
   }
 }
-/* line 559, ../SASS/master.scss */
+/* line 597, ../SASS/master.scss */
 .register p {
   width: 70%;
   margin: -10px auto;
@@ -870,13 +898,13 @@ section:after {
   font-weight: 500;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 559, ../SASS/master.scss */
+  /* line 597, ../SASS/master.scss */
   .register p {
     visibility: visible;
     z-index: 10;
   }
 }
-/* line 572, ../SASS/master.scss */
+/* line 610, ../SASS/master.scss */
 .register .formL {
   position: relative;
   width: 45%;
@@ -886,7 +914,7 @@ section:after {
   padding-top: 20px;
   padding-left: 20px;
 }
-/* line 585, ../SASS/master.scss */
+/* line 623, ../SASS/master.scss */
 .register .formL #infos {
   position: relative;
   top: 319px;
@@ -903,12 +931,12 @@ section:after {
   cursor: default;
   box-shadow: 0px 0px 1px black;
 }
-/* line 600, ../SASS/master.scss */
+/* line 638, ../SASS/master.scss */
 .register .formL #infos:hover, .register .formL #infos:active {
   box-shadow: 0px 0px 15px black;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 572, ../SASS/master.scss */
+  /* line 610, ../SASS/master.scss */
   .register .formL {
     width: 100%;
     margin: auto;
@@ -918,12 +946,12 @@ section:after {
   }
 }
 @media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 572, ../SASS/master.scss */
+  /* line 610, ../SASS/master.scss */
   .register .formL {
     width: 60%;
   }
 }
-/* line 617, ../SASS/master.scss */
+/* line 655, ../SASS/master.scss */
 .register .formL #Preview {
   position: relative;
   clear: both;
@@ -936,13 +964,13 @@ section:after {
   -moz-box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 617, ../SASS/master.scss */
+  /* line 655, ../SASS/master.scss */
   .register .formL #Preview {
     float: none;
     margin: auto;
   }
 }
-/* line 633, ../SASS/master.scss */
+/* line 671, ../SASS/master.scss */
 .register .formR {
   position: absolute;
   top: 20px;
@@ -955,7 +983,7 @@ section:after {
   border-radius: 25px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 633, ../SASS/master.scss */
+  /* line 671, ../SASS/master.scss */
   .register .formR {
     position: relative;
     display: none;
@@ -968,7 +996,7 @@ section:after {
   }
 }
 @media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 633, ../SASS/master.scss */
+  /* line 671, ../SASS/master.scss */
   .register .formR {
     display: none;
     top: -500px;
@@ -980,14 +1008,14 @@ section:after {
   }
 }
 @media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 633, ../SASS/master.scss */
+  /* line 671, ../SASS/master.scss */
   .register .formR {
     width: 37%;
     border: 2px black solid;
     visibility: visible;
   }
 }
-/* line 676, ../SASS/master.scss */
+/* line 714, ../SASS/master.scss */
 .register .formR #theerror {
   position: relative;
   clear: both;
@@ -999,7 +1027,7 @@ section:after {
   text-align: center;
   height: auto;
 }
-/* line 686, ../SASS/master.scss */
+/* line 724, ../SASS/master.scss */
 .register .formR #theerror p {
   position: relative;
   margin: 0 auto;
@@ -1009,7 +1037,7 @@ section:after {
   line-height: unset;
   top: unset;
 }
-/* line 697, ../SASS/master.scss */
+/* line 735, ../SASS/master.scss */
 .register .formcont {
   position: relative;
   clear: both;
@@ -1021,24 +1049,24 @@ section:after {
   z-index: 10;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 697, ../SASS/master.scss */
+  /* line 735, ../SASS/master.scss */
   .register .formcont {
     height: auto;
   }
 }
 @media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 697, ../SASS/master.scss */
+  /* line 735, ../SASS/master.scss */
   .register .formcont {
     height: auto;
   }
 }
 @media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 697, ../SASS/master.scss */
+  /* line 735, ../SASS/master.scss */
   .register .formcont {
     height: auto;
   }
 }
-/* line 721, ../SASS/master.scss */
+/* line 759, ../SASS/master.scss */
 .register .formcont #user-result, .register .formcont #user-email, .register .formcont #user-result2 {
   position: relative;
   top: 3px;
@@ -1050,14 +1078,14 @@ section:after {
   font-size: 12px;
   height: 30px;
 }
-/* line 732, ../SASS/master.scss */
+/* line 770, ../SASS/master.scss */
 .register .formcont fieldset {
   width: 42%;
   float: left;
   margin-left: 20px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 732, ../SASS/master.scss */
+  /* line 770, ../SASS/master.scss */
   .register .formcont fieldset {
     display: block;
     float: left;
@@ -1067,42 +1095,42 @@ section:after {
   }
 }
 @media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 732, ../SASS/master.scss */
+  /* line 770, ../SASS/master.scss */
   .register .formcont fieldset {
     width: 40%;
   }
 }
-/* line 746, ../SASS/master.scss */
+/* line 784, ../SASS/master.scss */
 .register .formcont fieldset input {
   float: left;
   clear: right;
 }
-/* line 750, ../SASS/master.scss */
+/* line 788, ../SASS/master.scss */
 .register .formcont fieldset label {
   float: left;
   clear: left;
   line-height: 20px;
   width: 100px;
 }
-/* line 757, ../SASS/master.scss */
+/* line 795, ../SASS/master.scss */
 .register .formcont .rightit {
   position: relative;
   padding-left: 120px;
   box-sizing: padding-box;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 757, ../SASS/master.scss */
+  /* line 795, ../SASS/master.scss */
   .register .formcont .rightit {
     padding: 0;
   }
 }
 @media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 757, ../SASS/master.scss */
+  /* line 795, ../SASS/master.scss */
   .register .formcont .rightit {
     padding: 0;
   }
 }
-/* line 769, ../SASS/master.scss */
+/* line 807, ../SASS/master.scss */
 .register form {
   position: relative;
   top: 10px;
@@ -1110,7 +1138,7 @@ section:after {
   margin: auto;
   padding-top: 20px;
 }
-/* line 775, ../SASS/master.scss */
+/* line 813, ../SASS/master.scss */
 .register form label {
   position: relative;
   cursor: default;
@@ -1132,14 +1160,15 @@ section:after {
   border-top-left-radius: 10px 10px;
   border-bottom-left-radius: 10px 10px;
   background-image: -webkit-linear-gradient(to right, #cecece, #efefef);
-  background-image: -webkit-linear-gradient(left, #cecece, #efefef);
+  background-image: -moz-linear-gradient(to right, #cecece, #efefef);
+  background-image: -o-linear-gradient(to right, #cecece, #efefef);
   background-image: linear-gradient(to right, #cecece, #efefef);
   box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 775, ../SASS/master.scss */
+  /* line 813, ../SASS/master.scss */
   .register form label {
     font-size: 10px;
     font-family: sans-serif;
@@ -1150,7 +1179,7 @@ section:after {
     margin: 9px 0;
   }
 }
-/* line 812, ../SASS/master.scss */
+/* line 850, ../SASS/master.scss */
 .register form input {
   position: relative;
   font-family: serif;
@@ -1173,19 +1202,19 @@ section:after {
   -webkit-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
 }
-/* line 833, ../SASS/master.scss */
+/* line 871, ../SASS/master.scss */
 .register form input[type="text"] {
   text-align: left;
   width: 200px;
   letter-spacing: 0px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 833, ../SASS/master.scss */
+  /* line 871, ../SASS/master.scss */
   .register form input[type="text"] {
     width: 180px;
   }
 }
-/* line 841, ../SASS/master.scss */
+/* line 879, ../SASS/master.scss */
 .register form input[type="submit"] {
   position: relative;
   left: -150px;
@@ -1202,28 +1231,27 @@ section:after {
   text-transform: uppercase;
   background-color: #fefefe;
   background: filter-gradient(#fefefe, #fefefe, horizontal);
-  background-image: -webkit-linear-gradient(top, #fefefe 0%, #cecece 23%, #cecece 79%, #fefefe 100%);
   background-image: linear-gradient(top, #fefefe 0%, #cecece 23%, #cecece 79%, #fefefe 100%);
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 841, ../SASS/master.scss */
+  /* line 879, ../SASS/master.scss */
   .register form input[type="submit"] {
     left: 0;
   }
 }
-/* line 862, ../SASS/master.scss */
+/* line 900, ../SASS/master.scss */
 .register form input[type="email"] {
   text-align: left;
   width: 200px;
   letter-spacing: 0px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 862, ../SASS/master.scss */
+  /* line 900, ../SASS/master.scss */
   .register form input[type="email"] {
     width: 180px;
   }
 }
-/* line 870, ../SASS/master.scss */
+/* line 908, ../SASS/master.scss */
 .register form input[type="file"] {
   overflow: hidden;
   position: relative;
@@ -1232,27 +1260,27 @@ section:after {
   height: 0.1px;
   opacity: 0;
 }
-/* line 878, ../SASS/master.scss */
+/* line 916, ../SASS/master.scss */
 .register form input:hover {
   border: 0;
 }
-/* line 881, ../SASS/master.scss */
+/* line 919, ../SASS/master.scss */
 .register form input:active {
   border: 0;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 812, ../SASS/master.scss */
+  /* line 850, ../SASS/master.scss */
   .register form input {
     font-size: 12px;
     padding: 11px 0px 9px 0px;
     margin: 12px 0;
   }
 }
-/* line 890, ../SASS/master.scss */
+/* line 928, ../SASS/master.scss */
 .register form button {
   height: 3px;
 }
-/* line 893, ../SASS/master.scss */
+/* line 931, ../SASS/master.scss */
 .register form textarea {
   position: relative;
   float: left;
@@ -1275,7 +1303,7 @@ section:after {
   -moz-appearance: none;
   appearance: none;
 }
-/* line 915, ../SASS/master.scss */
+/* line 953, ../SASS/master.scss */
 .register form select {
   position: relative;
   font-family: serif;
@@ -1303,23 +1331,23 @@ section:after {
   -moz-appearance: none;
   appearance: none;
 }
-/* line 942, ../SASS/master.scss */
+/* line 980, ../SASS/master.scss */
 .register form fieldset {
   width: 100%;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 945, ../SASS/master.scss */
+  /* line 983, ../SASS/master.scss */
   .register form fieldset span {
     float: left;
     clear: both;
   }
 }
-/* line 950, ../SASS/master.scss */
+/* line 988, ../SASS/master.scss */
 .register form fieldset .bd {
   width: 70px;
   margin: 0;
 }
-/* line 954, ../SASS/master.scss */
+/* line 992, ../SASS/master.scss */
 .register form fieldset select {
   float: left;
   padding-top: 11px;
@@ -1328,13 +1356,13 @@ section:after {
   padding-left: 8px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 954, ../SASS/master.scss */
+  /* line 992, ../SASS/master.scss */
   .register form fieldset select {
     float: left;
     clear: both;
   }
 }
-/* line 965, ../SASS/master.scss */
+/* line 1003, ../SASS/master.scss */
 .register form fieldset label {
   width: 50px;
   font-size: 10px;
@@ -1343,17 +1371,17 @@ section:after {
   margin-left: 10px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 965, ../SASS/master.scss */
+  /* line 1003, ../SASS/master.scss */
   .register form fieldset label {
     float: left;
     clear: both;
   }
 }
-/* line 976, ../SASS/master.scss */
+/* line 1014, ../SASS/master.scss */
 .register form fieldset .aging {
   line-height: 25px;
 }
-/* line 979, ../SASS/master.scss */
+/* line 1017, ../SASS/master.scss */
 .register form fieldset input {
   width: 80px;
   line-height: 25px;
@@ -1362,13 +1390,13 @@ section:after {
   clear: none;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 979, ../SASS/master.scss */
+  /* line 1017, ../SASS/master.scss */
   .register form fieldset input {
     float: none;
     clear: both;
   }
 }
-/* line 991, ../SASS/master.scss */
+/* line 1029, ../SASS/master.scss */
 .register form .pslb {
   cursor: pointer;
   width: auto;
@@ -1384,11 +1412,11 @@ section:after {
   -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* line 1008, ../SASS/master.scss */
+/* line 1046, ../SASS/master.scss */
 .mobileReg {
   position: relative;
 }
-/* line 1010, ../SASS/master.scss */
+/* line 1048, ../SASS/master.scss */
 .mobileReg #theerror {
   position: relative;
   clear: both;
@@ -1400,7 +1428,7 @@ section:after {
   text-align: center;
   height: auto;
 }
-/* line 1020, ../SASS/master.scss */
+/* line 1058, ../SASS/master.scss */
 .mobileReg #theerror p {
   position: relative;
   margin: 0 auto;
@@ -1410,11 +1438,11 @@ section:after {
   line-height: unset;
   top: unset;
 }
-/* line 1031, ../SASS/master.scss */
+/* line 1069, ../SASS/master.scss */
 .mobileReg form {
   width: 100%;
 }
-/* line 1033, ../SASS/master.scss */
+/* line 1071, ../SASS/master.scss */
 .mobileReg form #Preview {
   position: relative;
   clear: both;
@@ -1426,7 +1454,7 @@ section:after {
   -webkit-box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.9);
 }
-/* line 1044, ../SASS/master.scss */
+/* line 1082, ../SASS/master.scss */
 .mobileReg form #user-result {
   position: relative;
   top: 32px;
@@ -1438,7 +1466,7 @@ section:after {
   font-size: 12px;
   height: 30px;
 }
-/* line 1055, ../SASS/master.scss */
+/* line 1093, ../SASS/master.scss */
 .mobileReg form #user-result2 {
   position: relative;
   top: 32px;
@@ -1450,7 +1478,7 @@ section:after {
   font-size: 12px;
   height: 30px;
 }
-/* line 1066, ../SASS/master.scss */
+/* line 1104, ../SASS/master.scss */
 .mobileReg form #user-email {
   position: relative;
   top: 32px;
@@ -1462,7 +1490,7 @@ section:after {
   font-size: 12px;
   height: 30px;
 }
-/* line 1077, ../SASS/master.scss */
+/* line 1115, ../SASS/master.scss */
 .mobileReg form #infos {
   position: relative;
   top: 32px;
@@ -1478,11 +1506,11 @@ section:after {
   cursor: default;
   box-shadow: 0px 0px 1px black;
 }
-/* line 1091, ../SASS/master.scss */
+/* line 1129, ../SASS/master.scss */
 .mobileReg form #infos:hover, .mobileReg form #infos:active {
   box-shadow: 0px 0px 15px black;
 }
-/* line 1095, ../SASS/master.scss */
+/* line 1133, ../SASS/master.scss */
 .mobileReg form input {
   width: 100%;
   float: left;
@@ -1494,7 +1522,7 @@ section:after {
   border-radius: 10px;
   padding: 5px 4px;
 }
-/* line 1105, ../SASS/master.scss */
+/* line 1143, ../SASS/master.scss */
 .mobileReg form input[type="file"] {
   overflow: hidden;
   position: relative;
@@ -1503,13 +1531,12 @@ section:after {
   height: 0.1px;
   opacity: 0;
 }
-/* line 1113, ../SASS/master.scss */
+/* line 1151, ../SASS/master.scss */
 .mobileReg form input[type="submit"] {
   width: 60%;
   top: 10px;
   float: none;
   clear: both;
-  background-image: -webkit-linear-gradient(top, #cecaca, #f3f2f2);
   background-image: linear-gradient(to bottom, #cecaca, #f3f2f2);
   margin: -10px auto;
   font-size: 18px;
@@ -1521,7 +1548,7 @@ section:after {
   -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
 }
-/* line 1129, ../SASS/master.scss */
+/* line 1167, ../SASS/master.scss */
 .mobileReg form input[type="text"], .mobileReg form input[type="email"] {
   border: 1px solid #ccc;
   background-color: #fff;
@@ -1529,7 +1556,7 @@ section:after {
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
 }
-/* line 1137, ../SASS/master.scss */
+/* line 1175, ../SASS/master.scss */
 .mobileReg form select {
   float: left;
   clear: both;
@@ -1543,7 +1570,7 @@ section:after {
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
 }
-/* line 1150, ../SASS/master.scss */
+/* line 1188, ../SASS/master.scss */
 .mobileReg form textarea {
   float: left;
   clear: both;
@@ -1557,7 +1584,7 @@ section:after {
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
 }
-/* line 1163, ../SASS/master.scss */
+/* line 1201, ../SASS/master.scss */
 .mobileReg form label {
   float: left;
   clear: both;
@@ -1573,33 +1600,35 @@ section:after {
   -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
 }
-/* line 1179, ../SASS/master.scss */
+/* line 1217, ../SASS/master.scss */
 .mobileReg form .pslb {
   background-color: transparent;
   box-shadow: none;
 }
 
-/* line 1187, ../SASS/master.scss */
+/* line 1225, ../SASS/master.scss */
 footer {
   width: 100%;
   height: 220px;
   background-color: #e5e8ef;
   position: relative;
+  -webkit-box-shadow: 0 -17px 11px -5px rgba(0, 0, 0, 0.75), inset 0 27px 21px -10px #706c70;
+  -moz-box-shadow: 0 -17px 11px -5px rgba(0, 0, 0, 0.75), inset 0 27px 21px -10px #706c70;
   box-shadow: 0 -17px 11px -5px rgba(0, 0, 0, 0.75), inset 0 27px 21px -10px #706c70;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 1187, ../SASS/master.scss */
+  /* line 1225, ../SASS/master.scss */
   footer {
     height: 160px;
   }
 }
-/* line 1199, ../SASS/master.scss */
+/* line 1237, ../SASS/master.scss */
 footer .content {
   margin: auto;
   width: 100%;
   position: relative;
 }
-/* line 1203, ../SASS/master.scss */
+/* line 1241, ../SASS/master.scss */
 footer .content ul {
   width: 40%;
   text-align: center;
@@ -1610,16 +1639,18 @@ footer .content ul {
   display: block;
   border-radius: 15px;
   background-color: #f5f6f9;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 1203, ../SASS/master.scss */
+  /* line 1241, ../SASS/master.scss */
   footer .content ul {
     top: 40px;
     width: 85%;
   }
 }
-/* line 1221, ../SASS/master.scss */
+/* line 1259, ../SASS/master.scss */
 footer .content li {
   width: 33.33333%;
   display: inline;
@@ -1627,32 +1658,29 @@ footer .content li {
   margin: 8%;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 1221, ../SASS/master.scss */
+  /* line 1259, ../SASS/master.scss */
   footer .content li {
     width: 100% / 3;
   }
-  /* line 1228, ../SASS/master.scss */
+  /* line 1266, ../SASS/master.scss */
   footer .content li img {
     width: 10%;
   }
 }
-/* line 1235, ../SASS/master.scss */
+/* line 1273, ../SASS/master.scss */
 footer .content .below {
   width: 100%;
   position: relative;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   top: 80px;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 1235, ../SASS/master.scss */
+  /* line 1273, ../SASS/master.scss */
   footer .content .below {
     top: 50px;
   }
 }
-/* line 1243, ../SASS/master.scss */
+/* line 1281, ../SASS/master.scss */
 footer .content .below p {
   width: 80%;
   text-align: center;
@@ -1661,12 +1689,12 @@ footer .content .below p {
   margin: 0px auto 20px auto;
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 1243, ../SASS/master.scss */
+  /* line 1281, ../SASS/master.scss */
   footer .content .below p {
     font-size: 12px;
   }
 }
-/* line 1252, ../SASS/master.scss */
+/* line 1290, ../SASS/master.scss */
 footer .content .below p span {
   text-transform: uppercase;
   font-weight: bold;

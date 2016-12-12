@@ -360,6 +360,44 @@ figure:nth-child(4) {
         }
     }
 }
+
+// for the confirm page
+#userdata{
+  position: relative;
+  width: 80%;
+  height: 300px;
+  margin: auto;
+  border-radius: 30px;
+  box-shadow: $shadowoffset;
+  @include mQ('200px', '700px'){
+    width: 100%;
+    height: auto;
+  }
+  img{
+    position: relative;
+    width: 145px;
+    height: 145px;
+    float: left;
+    left: 50px;
+    top: 50px;
+    border-radius: 15px;
+    box-shadow: $shadowoffset;
+  }
+  div{
+    position: relative;
+    float: left;
+    left: 70px;
+    top: 50px;
+    width: 50%;
+    h1{
+      width: 100%;
+    }
+    span{
+      width: 100%;
+    }
+  }
+}
+
 //  Steering committee section
 .committee {
     margin-bottom: 60px;

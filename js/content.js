@@ -120,7 +120,23 @@ $('#passport').change(function(event) {
                return(false);
         }
         var pickit = getQueryVariable("p");
-
+        if (pickit == '') {
+          window.location.href = 'index.html';
+        }
+        $.ajax({
+          url: '/php/getit.php',
+          type: 'POST',
+          dataType: 'json',
+          data: {'user_auth': pickit}
+        })
+        .done(function(data) {
+          if (data.success !== true) {
+            $('#usernames').html('Please that user does not exit <a href="register.html">Click Here to register</a>');
+          }
+            $('#usernames').html(data.userdatas.surname + ', ' + data.userdatas.othername);
+            $('#userstate').html(data.userdatas.local_govt + ', ' + data.userdatas.stateOrigin + ' State');
+            $('#userimage').attr('src', 'upload/'+ data.userdatas.picture);
+        });
       }
     // checking if phone f already exist
     var x_timer;

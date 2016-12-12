@@ -1,0 +1,5 @@
+{
+  "in": ["/master.css"],
+  "out": "/masters.css",
+  "browsers": ["last 3 versions", "Android 2.3"]
+}

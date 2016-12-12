@@ -3,6 +3,7 @@ $(document).ready(function() {
 checkme = [ ];
 
 var picvar = '';
+var userdata = '';
 $('#passport').change(function(event) {
   var picpas = this.files[0];
   picname = picpas.name;
@@ -90,8 +91,9 @@ $('#passport').change(function(event) {
               $('#theerror').html('<p style="color:green; font-weight:bolder;">'+data.message+'</p>');
               $('#submit').attr('disabled', '');
               $('#submit').val('Successful...');
-              setTimeout(function () {
-                window.location.href = 'confirmed.html';
+              userdata = data.user;
+              setTimeout(function() {
+                window.location.href = 'confirmed.html?p='+userdata+' ';
               }, 3000);
 
             }
@@ -102,7 +104,25 @@ $('#passport').change(function(event) {
           // stop the form from submitting the normal way and refreshing the page
           event.preventDefault();
       });
-// checking if phone f already exist
+
+      // to get file location of confirmed
+
+      // this is to check for user confirmed registered
+      if(window.location.href.indexOf("confirmed") > -1) {
+        function getQueryVariable(variable)
+        {
+               var query = window.location.search.substring(1);
+               var vars = query.split("&");
+               for (var i=0;i<vars.length;i++) {
+                       var pair = vars[i].split("=");
+                       if(pair[0] == variable){return pair[1];}
+               }
+               return(false);
+        }
+        var pickit = getQueryVariable("p");
+
+      }
+    // checking if phone f already exist
     var x_timer;
        $("#phone").change(function (e){
            clearTimeout(x_timer);

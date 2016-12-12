@@ -80,7 +80,10 @@ require_once 'class/config.php';
      }
      $data['success'] = true;
      $data['message'] = 'Thank You, You have been Successfully registered!';
-     $data['user']  = $registeration['phone'];
+     $data['user']  = md5($registeration['phone'] . microtime());
+     $authdata['data'] = $registeration['phone'];
+     $authdata['user_auth'] = $data['user'];
+     $user->confirm($authdata);
   }
 
 echo json_encode($data);

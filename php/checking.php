@@ -13,7 +13,7 @@ if ($_POST['phone']) {
       $data['message'] = "<em style='color: red; font-weight:bold;'>We already have this number</em>";
   } else {
     $data['success'] = true;
-    $data['message'] = "Useable";
+    $data['message'] = "<strong style='color: green;'>Useable</strong>";
 }
 echo json_encode($data);
 }

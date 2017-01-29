@@ -28,7 +28,6 @@ $('#passport').change(function(event) {
         $('#loading').hide();
         $("#message").html(data);
         picvar = data;
-        console.log(data);
       }
     });
   }
@@ -38,10 +37,6 @@ $('#passport').change(function(event) {
 
           // get the form data
           // there are many ways to get this data using jQuery (you can use the class or id also)
-          // var formData = $( "input, textarea, select" ).serialize();
-
-          // var formData = ;
-                    // console.log(formData);
           // process the form
 
           $.ajax({
@@ -87,7 +82,6 @@ $('#passport').change(function(event) {
               }
 
             } else {
-              console.log(data);
               $('#theerror').html('<p style="color:green; font-weight:bolder;">'+data.message+'</p>');
               $('#submit').attr('disabled', '');
               $('#submit').val('Successful...');
@@ -97,10 +91,7 @@ $('#passport').change(function(event) {
               }, 3000);
 
             }
-          }).fail(function(data) {
-            console.log(data);
-          })
-
+          });
           // stop the form from submitting the normal way and refreshing the page
           event.preventDefault();
       });
@@ -147,6 +138,7 @@ $('#passport').change(function(event) {
                check_username_ajax(phone);
            }, 1000);
        });
+
 
    function check_username_ajax(pnum){
        $("#user-result").html('<img src="img/45.gif" width="20px" height="20px" />');
@@ -235,7 +227,6 @@ $('#passport').change(function(event) {
      }
      checkme = $.unique(checkme);
      if (checkme.length >= 1 && $.inArray('withme', checkme) !== -1) {
-       console.log(checkme);
        $('#submit').removeAttr('disabled');
      }
 
@@ -277,49 +268,4 @@ $('#passport').change(function(event) {
     $('#datepicker').val('Prefer Not To Mention')
   });
 
-
-  // $( "#UserRD" ).click(function() {
-  //   $( ".formR" ).animate({ boxShadow: "0px 0px 15px rgba(0,0,0,0.2)" });
-  // });  // for body click this will close menu
-
-/*  $('body').click(function(event) {
-    if(!$(event.target).is('#main-nav') && ){
-          $("nav ul").slideUp("very-slow");
-        }
-  });
-*/
-
-
- // var cw =  $('.circled-content').height($('.circled-content').width())
- // console.log($('.circled-content').height());
- // console.log($('.circled-content').width());
-    // this slides in from the top menu
-  /*  $("#slide1").fadeIn('slow').delay(5000).fadeOut('slow');
-    var t2 = setTimeout(function(){
-        $("#slide2").fadeIn('slow').delay(5000).fadeOut('slow');
-        var t3 = setTimeout(function(){
-            $("#slide3").fadeIn('slow').delay(10000).fadeOut('slow');
-            var t4 = setTimeout(function(){
-                $("#slide4").fadeIn('slow').delay(5000).fadeOut('slow');
-                var t5 = setTimeout(function(){
-                    $("#slide5").fadeIn('slow');
-                }, 6500);
-            }, 11500);
-        }, 6500);
-    }, 6500);*/
-    //banner selected for slide-show
-/*    var overlayy = $('.overlay');
-    var conleft = $('.con-left');
-    var conleftH1 = $('.con-left').children('h1');
-    $(function() {
-      $(overlayy).hide().delay(1500).fadeIn(4000);
-      $(conleft).hide().delay(3500).slideDown(4000);
-      $(conleftH1).hide().delay(6500).show(4000).delay(6500).slideToggle(4000)
-        $(conleftH1).hide().delay(500).slideToggle(4000);
-    });  */
-    /*  // this slides in from the bottom
-    $("header").animate({
-        "top": "-=500px"
-    }, 1000, 'swing');
-*/
 });

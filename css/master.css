@@ -1,2257 +1,1480 @@
 /* This Build by Hassan Sani Wednesday October 12, 2016 1:57 AM */
-
 /* line 1, ../SASS/reset.scss */
-
 body {
-  width: 100%;
-
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-
-  color: #000;
-  background: #f8f9fb;
-
   font-family: 'Roboto', sans-serif;
-}
+  background: #f8f9fb;
+  color: #000;
+  width: 100%;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s; }
 
 /* line 10, ../SASS/reset.scss */
-
-html,
-body,
-ul,
-ol,
-li,
-form,
-fieldset,
-legend {
+html, body, ul, ol, li, form, fieldset, legend {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /* line 15, ../SASS/reset.scss */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-}
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0; }
 
 /* line 19, ../SASS/reset.scss */
-
-fieldset,
-img {
-  border: 0;
-}
+fieldset, img {
+  border: 0; }
 
 /* line 23, ../SASS/reset.scss */
-
 li {
-  list-style: none;
-}
+  list-style: none; }
 
 /* line 27, ../SASS/reset.scss */
-
-a,
-a:link,
-a:visited,
-a:hover,
-a:active {
-  text-decoration: none;
-
+a, a:link, a:visited, a:hover, a:active {
   color: #000;
-}
+  text-decoration: none; }
 
 /*  Media Query Mobile device */
-
 /* line 8, ../SASS/master.scss */
-
 header {
   width: 100%;
-  height: auto;
-}
+  height: auto; }
 
 /* line 13, ../SASS/master.scss */
-
 #main-nav {
-  position: relative;
-  z-index: 100;
-
   width: 100%;
   height: 75px;
-
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  animation-duration: 2s;
-
   background-color: #e5e8f0;
+  background-image: -webkit-linear-gradient(top, #cecaca, #f3f2f2);
   background-image: linear-gradient(to bottom, #cecaca, #f3f2f2);
-  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2), inset 0 -10px 1em -1em #4e6188;
-  /* background:red */
-}
-
-/* line 31, ../SASS/master.scss */
-
-#main-nav span {
-  display: none;
-}
-
-/* line 48, ../SASS/master.scss */
-
-#main-nav .logo {
-  float: left;
-
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 25.83333%;
-  height: 48.07692px;
-  padding-top: 25px;
-  padding-left: 6.5%;
-
-  text-transform: uppercase;
-
-  background: url("../img/BridgeIn.png") no-repeat 10px;
-
-  font-family: 'Chonburi';
-  font-size: 14px;
-  font-weight: bold;
-}
-
-/* line 126, ../SASS/master.scss */
-
-#main-nav ul {
   position: relative;
-  z-index: 1;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  z-index: 100;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2), inset 0 -10px 1em -1em #4e6188
+  /* background:red */ }
+  @media screen and (min-width: 200px) and (max-width: 700px) {
+    /* line 13, ../SASS/master.scss */
+    #main-nav {
+      position: absolute;
+      height: 50px;
+      width: 100%;
+      margin: auto; } }
+  /* line 31, ../SASS/master.scss */
+  #main-nav span {
+    display: none; }
+    @media screen and (min-width: 200px) and (max-width: 700px) {
+      /* line 31, ../SASS/master.scss */
+      #main-nav span {
+        display: block;
+        line-height: 50px;
+        font-size: 12px;
+        font-weight: bold;
+        float: right;
+        margin-right: 10px; }
+        /* line 40, ../SASS/master.scss */
+        #main-nav span a {
+          padding: 15px;
+          text-transform: uppercase; } }
+    @media screen and (min-width: 701px) and (max-width: 810px) {
+      /* line 31, ../SASS/master.scss */
+      #main-nav span {
+        display: block;
+        line-height: 75px;
+        font-size: 20px;
+        font-weight: bold;
+        float: right;
+        margin-right: 20px; }
+        /* line 52, ../SASS/master.scss */
+        #main-nav span a {
+          padding: 15px;
+          text-transform: uppercase; } }
+  /* line 60, ../SASS/master.scss */
+  #main-nav .logo {
+    width: 25.83333%;
+    background: url("../img/BridgeIn.png") no-repeat 10px;
+    font-family: 'Chonburi';
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    padding-left: 6.5%;
+    padding-top: 25px;
+    height: 48.07692px; }
+    @media screen and (min-width: 200px) and (max-width: 700px) {
+      /* line 60, ../SASS/master.scss */
+      #main-nav .logo {
+        font-size: 0px;
+        font-weight: 700;
+        width: 40%;
+        padding-left: 70px;
+        line-height: 1px;
+        background: url("../img/BridgeMB.png") no-repeat 15px 2px; }
+        /* line 81, ../SASS/master.scss */
+        #main-nav .logo a {
+          position: absolute;
+          width: 40%;
+          height: 50px;
+          background-color: transparent !important;
+          top: 0; }
+        /* line 88, ../SASS/master.scss */
+        #main-nav .logo:after {
+          content: 'The Bridge';
+          font-size: 17px;
+          font-family: "Chonburi"; } }
+    @media screen and (min-width: 811px) and (max-width: 1024px) {
+      /* line 60, ../SASS/master.scss */
+      #main-nav .logo {
+        font-size: 0px;
+        font-weight: 700;
+        width: 40%;
+        margin-top: 16px;
+        box-sizing: border-box;
+        padding: 20px 0 0 70px;
+        line-height: 1px;
+        background: url("../img/BridgeMB.png") no-repeat 15px 2px; }
+        /* line 103, ../SASS/master.scss */
+        #main-nav .logo a {
+          position: absolute;
+          width: 40%;
+          height: 50px;
+          background-color: transparent !important;
+          top: 0; }
+        /* line 110, ../SASS/master.scss */
+        #main-nav .logo::before {
+          content: 'The Bridge';
+          font-size: 17px;
+          font-weight: bolder;
+          font-family: 'Chonburi'; } }
+    @media screen and (min-width: 701px) and (max-width: 810px) {
+      /* line 60, ../SASS/master.scss */
+      #main-nav .logo {
+        font-size: 0px;
+        width: 25%;
+        padding-left: 85px; }
+        /* line 121, ../SASS/master.scss */
+        #main-nav .logo a {
+          position: absolute;
+          width: 50%;
+          height: 50px;
+          background-color: transparent !important;
+          top: 0; }
+        /* line 128, ../SASS/master.scss */
+        #main-nav .logo::before {
+          content: 'The Bridge';
+          font-size: 17px;
+          font-weight: bolder;
+          font-family: 'Chonburi'; } }
+  /* line 138, ../SASS/master.scss */
+  #main-nav ul {
+    position: relative;
+    float: right;
+    height: 100%;
+    width: 64.66667%;
+    margin-left: 10px;
+    margin-right: auto;
+    z-index: 1;
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s; }
+    @media screen and (min-width: 200px) and (max-width: 700px) {
+      /* line 138, ../SASS/master.scss */
+      #main-nav ul {
+        display: none;
+        width: 40%;
+        background-color: #dee3ec;
+        z-index: 10;
+        margin: 0;
+        height: 700px; } }
+    @media screen and (min-width: 701px) and (max-width: 810px) {
+      /* line 138, ../SASS/master.scss */
+      #main-nav ul {
+        display: none;
+        right: -110px;
+        width: 40%;
+        background-color: #dee3ec;
+        z-index: 10;
+        margin: 0;
+        top: 75px;
+        height: auto; } }
+    @media screen and (min-width: 811px) and (max-width: 1024px) {
+      /* line 138, ../SASS/master.scss */
+      #main-nav ul {
+        width: 57%; } }
+    /* line 173, ../SASS/master.scss */
+    #main-nav ul li {
+      position: relative;
+      display: inline;
+      width: 9.2381%;
+      line-height: 75px;
+      list-style: none;
+      height: 100%; }
+      @media screen and (min-width: 200px) and (max-width: 700px) {
+        /* line 173, ../SASS/master.scss */
+        #main-nav ul li {
+          display: block;
+          line-height: 40px;
+          width: 100%;
+          font-size: 12px;
+          font-weight: 600;
+          text-align: center;
+          height: auto;
+          padding: 15px 0;
+          box-shadow: 1px 1px 5px #464646; }
+          /* line 190, ../SASS/master.scss */
+          #main-nav ul li:hover {
+            box-shadow: 1px 12px 5px #464646; } }
+      @media screen and (min-width: 701px) and (max-width: 810px) {
+        /* line 173, ../SASS/master.scss */
+        #main-nav ul li {
+          display: block;
+          line-height: 40px;
+          width: 100%;
+          font-size: 12px;
+          font-weight: 600;
+          text-align: center;
+          height: auto;
+          padding: 15px 0;
+          box-shadow: 1px 1px 5px #464646; }
+          /* line 205, ../SASS/master.scss */
+          #main-nav ul li:hover {
+            box-shadow: 1px 12px 5px #464646; } }
+      @media screen and (min-width: 811px) and (max-width: 1024px) {
+        /* line 173, ../SASS/master.scss */
+        #main-nav ul li {
+          right: 0;
+          margin: unset;
+          font-size: 12px; } }
+      /* line 214, ../SASS/master.scss */
+      #main-nav ul li a {
+        text-decoration: none;
+        font-family: sans-serif;
+        padding: 28.30189px 3%;
+        font-weight: bold;
+        color: currentColor;
+        text-transform: uppercase; }
+        @media screen and (min-width: 811px) and (max-width: 1024px) {
+          /* line 214, ../SASS/master.scss */
+          #main-nav ul li a {
+            right: 0;
+            padding: 28.30189px 2.5%; } }
+        /* line 225, ../SASS/master.scss */
+        #main-nav ul li a:hover {
+          position: relative;
+          overflow: hidden;
+          background-color: #e5e8f0;
+          box-shadow: 5px 0 1px rgba(0, 0, 0, 0.2), inset 1em -10px 1em -1em #f5f6f9
+          /* background:red */ }
+          @media screen and (min-width: 200px) and (max-width: 700px) {
+            /* line 225, ../SASS/master.scss */
+            #main-nav ul li a:hover {
+              box-shadow: unset;
+              overflow: unset;
+              background-color: unset; } }
+    /* line 20, ../SASS/mixin.scss */
+    #main-nav ul:after {
+      content: '';
+      display: block;
+      clear: both;
+      padding-bottom: 80px; }
 
-  float: right;
-
-  width: 64.66667%;
-  height: 100%;
-  margin-right: auto;
-  margin-left: 10px;
-
-  -webkit-animation-duration: 2.5s;
-  -moz-animation-duration: 2.5s;
-  animation-duration: 2.5s;
-  -webkit-animation-delay: 1.5s;
-  -moz-animation-delay: 1.5s;
-  animation-delay: 1.5s;
-}
-
-/* line 155, ../SASS/master.scss */
-
-#main-nav ul li {
-  position: relative;
-
-  display: inline;
-
-  width: 9.2381%;
-  height: 100%;
-
-  list-style: none;
-
-  line-height: 75px;
-}
-
-/* line 187, ../SASS/master.scss */
-
-#main-nav ul li a {
-  padding: 28.30189px 3%;
-
-  text-decoration: none;
-  text-transform: uppercase;
-
-  color: currentColor;
-
-  font-family: sans-serif;
-  font-weight: bold;
-}
-
-/* line 198, ../SASS/master.scss */
-
-#main-nav ul li a:hover {
-  position: relative;
-
-  overflow: hidden;
-
-  background-color: #e5e8f0;
-  box-shadow: 5px 0 1px rgba(0, 0, 0, 0.2), inset 1em -10px 1em -1em #f5f6f9;
-  /* background:red */
-}
-
-/* line 20, ../SASS/mixin.scss */
-
-#main-nav ul:after {
-  display: block;
-  clear: both;
-
-  padding-bottom: 80px;
-
-  content: '';
-}
-
-/* line 216, ../SASS/master.scss */
-
+/* line 243, ../SASS/master.scss */
 .banner {
-  height: 660px;
-
   text-align: right;
-}
+  height: 660px; }
+  /* line 246, ../SASS/master.scss */
+  .banner figure {
+    position: absolute;
+    -webkit-animation: round 30s infinite;
+            animation: round 30s infinite;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; }
+  @media screen and (min-width: 200px) and (max-width: 700px) {
+    /* line 243, ../SASS/master.scss */
+    .banner {
+      top: -20px;
+      height: 620px; } }
 
-/* line 219, ../SASS/master.scss */
-
-.banner figure {
-  position: absolute;
-
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-
-  animation: round 30s infinite;
-
-  opacity: 0;
-}
+@-webkit-keyframes round {
+  25% {
+    opacity: 1; }
+  40% {
+    opacity: 0; } }
 
 @keyframes round {
   25% {
-    opacity: 1;
-  }
-
+    opacity: 1; }
   40% {
-    opacity: 0;
-  }
-}
-
-/* line 242, ../SASS/master.scss */
-
+    opacity: 0; } }
+/* line 269, ../SASS/master.scss */
 figure:nth-child(1) {
-  animation-delay: 15s;
-}
-
-/* line 246, ../SASS/master.scss */
-
-figure:nth-child(2) {
-  animation-delay: 10s;
-}
-
-/* line 250, ../SASS/master.scss */
-
-figure:nth-child(3) {
-  animation-delay: 5s;
-}
-
-/* line 254, ../SASS/master.scss */
-
-figure:nth-child(4) {
-  animation-delay: 0s;
-}
-
-/* line 258, ../SASS/master.scss */
-
-.wrapper {
-  position: relative;
-  z-index: 2;
-
-  margin-top: -0px;
-  padding-top: 20px;
-
-  box-shadow: inset 0em 2em 1.5em -1em gray;
-}
-
-/* line 267, ../SASS/master.scss */
-
-.wrapper .content {
-  position: relative;
-
-  margin-top: 20px;
-}
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s; }
 
 /* line 273, ../SASS/master.scss */
+figure:nth-child(2) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s; }
 
-.about figure {
+/* line 277, ../SASS/master.scss */
+figure:nth-child(3) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s; }
+
+/* line 281, ../SASS/master.scss */
+figure:nth-child(4) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+
+/* line 285, ../SASS/master.scss */
+.wrapper {
   position: relative;
+  margin-top: -0px;
+  padding-top: 20px;
+  z-index: 2;
+  box-shadow: inset 0em 2em 1.5em -1em gray; }
+  @media screen and (min-width: 200px) and (max-width: 700px) {
+    /* line 285, ../SASS/master.scss */
+    .wrapper {
+      margin-top: -2px; } }
+  /* line 294, ../SASS/master.scss */
+  .wrapper .content {
+    position: relative;
+    margin-top: 20px; }
 
+/* line 300, ../SASS/master.scss */
+.about figure {
   float: right;
-
-  box-sizing: content-box;
   width: 520px;
   height: 520px;
-  padding: 10px;
-
   border-radius: 50%;
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-sizing: content-box;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* line 305, ../SASS/master.scss */
-
-.about figure img {
-  position: absolute;
-  top: 2%;
-  left: 2%;
-
-  border-radius: 50%;
-}
-
-/* line 332, ../SASS/master.scss */
-
-.about figure figcaption {
-  position: absolute;
-  top: 105%;
-
-  float: none !important;
-
-  width: 420px;
-  margin: auto !important;
-
-  text-align: center;
-  text-transform: uppercase;
-
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  padding: 10px; }
+  @media screen and (min-width: 200px) and (max-width: 700px) {
+    /* line 300, ../SASS/master.scss */
+    .about figure {
+      width: 80%;
+      margin: auto;
+      float: none;
+      clear: both;
+      position: relative; } }
+  @media screen and (min-width: 701px) and (max-width: 810px) {
+    /* line 300, ../SASS/master.scss */
+    .about figure {
+      width: 80%;
+      float: none;
+      clear: both;
+      position: relative; } }
+  @media screen and (min-width: 811px) and (max-width: 1024px) {
+    /* line 300, ../SASS/master.scss */
+    .about figure {
+      width: 400px;
+      left: 2%;
+      float: right;
+      position: relative; } }
+  /* line 332, ../SASS/master.scss */
+  .about figure img {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    border-radius: 50%; }
+    @media screen and (min-width: 200px) and (max-width: 700px) {
+      /* line 332, ../SASS/master.scss */
+      .about figure img {
+        width: 98%;
+        height: 98%;
+        top: 1%;
+        left: 0.5%; } }
+    @media screen and (min-width: 701px) and (max-width: 810px) {
+      /* line 332, ../SASS/master.scss */
+      .about figure img {
+        width: 98%;
+        height: 98%;
+        top: 1%;
+        left: 1%; } }
+    @media screen and (min-width: 811px) and (max-width: 1024px) {
+      /* line 332, ../SASS/master.scss */
+      .about figure img {
+        width: 400px;
+        height: 400px;
+        top: -0.1%;
+        left: -0.1%;
+        clear: both;
+        position: relative; } }
+  /* line 359, ../SASS/master.scss */
+  .about figure figcaption {
+    position: absolute;
+    width: 420px;
+    text-align: center;
+    line-height: 45px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    top: 105%;
+    float: none !important;
+    margin: auto !important;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); }
+    @media screen and (min-width: 200px) and (max-width: 700px) {
+      /* line 359, ../SASS/master.scss */
+      .about figure figcaption {
+        font-size: 10px;
+        width: 100%; } }
+    @media screen and (min-width: 701px) and (max-width: 810px) {
+      /* line 359, ../SASS/master.scss */
+      .about figure figcaption {
+        font-size: 14px;
+        width: 100%; } }
+    @media screen and (min-width: 811px) and (max-width: 1024px) {
+      /* line 359, ../SASS/master.scss */
+      .about figure figcaption {
+        font-size: 17px;
+        width: 420px;
+        margin-left: 0%;
+        left: -2%; } }
 
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 45px;
-}
-
-/* line 365, ../SASS/master.scss */
-
+/* line 392, ../SASS/master.scss */
 #userdata {
   position: relative;
-
   width: 80%;
   height: 300px;
   margin: auto;
-
   border-radius: 30px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-}
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); }
+  @media screen and (min-width: 200px) and (max-width: 700px) {
+    /* line 392, ../SASS/master.scss */
+    #userdata {
+      width: 100%;
+      height: auto; } }
+  /* line 403, ../SASS/master.scss */
+  #userdata img {
+    position: relative;
+    width: 145px;
+    height: 145px;
+    float: left;
+    left: 50px;
+    top: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); }
+  /* line 413, ../SASS/master.scss */
+  #userdata div {
+    position: relative;
+    float: left;
+    left: 70px;
+    top: 50px;
+    width: 50%; }
+    /* line 419, ../SASS/master.scss */
+    #userdata div h1 {
+      width: 100%; }
+    /* line 422, ../SASS/master.scss */
+    #userdata div span {
+      width: 100%; }
 
-/* line 376, ../SASS/master.scss */
-
-#userdata img {
-  position: relative;
-  top: 50px;
-  left: 50px;
-
-  float: left;
-
-  width: 145px;
-  height: 145px;
-
-  border-radius: 15px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* line 386, ../SASS/master.scss */
-
-#userdata div {
-  position: relative;
-  top: 50px;
-  left: 70px;
-
-  float: left;
-
-  width: 50%;
-}
-
-/* line 392, ../SASS/master.scss */
-
-#userdata div h1 {
-  width: 100%;
-}
-
-/* line 395, ../SASS/master.scss */
-
-#userdata div span {
-  width: 100%;
-}
-
-/* line 402, ../SASS/master.scss */
-
+/* line 429, ../SASS/master.scss */
 .committee {
-  margin-bottom: 60px;
-}
+  margin-bottom: 60px; }
+  /* line 431, ../SASS/master.scss */
+  .committee ul {
+    margin: auto;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    float: none;
+    box-sizing: border-box;
+    position: relative;
+    clear: both; }
+    /* line 20, ../SASS/mixin.scss */
+    .committee ul:after {
+      content: '';
+      display: block;
+      clear: both;
+      padding-bottom: 80px; }
+    @media screen and (min-width: 200px) and (max-width: 700px) {
+      /* line 431, ../SASS/master.scss */
+      .committee ul {
+        width: 300px; } }
+    /* line 442, ../SASS/master.scss */
+    .committee ul li {
+      float: left;
+      box-sizing: border-box;
+      text-align: center;
+      width: 23.75%;
+      margin: 7px;
+      padding: 7px;
+      border-radius: 20px;
+      box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2); }
+      @media screen and (min-width: 200px) and (max-width: 700px) {
+        /* line 442, ../SASS/master.scss */
+        .committee ul li {
+          width: 90%;
+          margin: 25px auto;
+          padding: 0;
+          float: none;
+          border-radius: 10px; } }
+      @media screen and (min-width: 701px) and (max-width: 810px) {
+        /* line 442, ../SASS/master.scss */
+        .committee ul li {
+          width: 50%;
+          margin: unset;
+          border-radius: 10px; } }
+      @media screen and (min-width: 811px) and (max-width: 1024px) {
+        /* line 442, ../SASS/master.scss */
+        .committee ul li {
+          width: 33.33333%;
+          margin: unset;
+          border-radius: 10px; } }
+    /* line 471, ../SASS/master.scss */
+    .committee ul img {
+      width: 50%;
+      margin: 20px 20%;
+      border-radius: 50%;
+      padding: 5px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); }
+      @media screen and (min-width: 200px) and (max-width: 700px) {
+        /* line 471, ../SASS/master.scss */
+        .committee ul img {
+          float: none;
+          width: 80%;
+          margin: auto;
+          padding: unset;
+          border: 0; } }
+      @media screen and (min-width: 701px) and (max-width: 810px) {
+        /* line 471, ../SASS/master.scss */
+        .committee ul img {
+          float: none;
+          width: 80%;
+          margin: auto;
+          padding: unset;
+          border: 0; } }
+      @media screen and (min-width: 811px) and (max-width: 1024px) {
+        /* line 471, ../SASS/master.scss */
+        .committee ul img {
+          float: none;
+          width: 80%;
+          margin: auto;
+          padding: unset;
+          border: 0; } }
+  /* line 504, ../SASS/master.scss */
+  .committee .positions {
+    width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 9px;
+    text-align: center; }
+  /* line 512, ../SASS/master.scss */
+  .committee a {
+    text-decoration: none;
+    color: #e5e8f0;
+    font-weight: bold; }
+    /* line 516, ../SASS/master.scss */
+    .committee a:hover {
+      color: #f0ece5; }
+  @media screen and (min-width: 200px) and (max-width: 700px) {
+    /* line 429, ../SASS/master.scss */
+    .committee {
+      margin-bottom: 10px;
+      padding-bottom: -20px; } }
 
-/* line 404, ../SASS/master.scss */
-
-.committee ul {
-  position: relative;
-
-  float: none;
-  clear: both;
-
-  box-sizing: border-box;
-  margin: auto;
-
-  align-content: center;
-}
-
-/* line 20, ../SASS/mixin.scss */
-
-.committee ul:after {
-  display: block;
-  clear: both;
-
-  padding-bottom: 80px;
-
-  content: '';
-}
-
-/* line 415, ../SASS/master.scss */
-
-.committee ul li {
-  float: left;
-
-  box-sizing: border-box;
-  width: 23.75%;
-  margin: 7px;
-  padding: 7px;
-
-  text-align: center;
-
-  border-radius: 20px;
-  -webkit-box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* line 444, ../SASS/master.scss */
-
-.committee ul img {
-  width: 50%;
-  margin: 20px 20%;
-  padding: 5px;
-
-  border-radius: 50%;
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* line 477, ../SASS/master.scss */
-
-.committee .positions {
-  width: 100%;
-  margin-top: 9px;
-
-  text-align: center;
-
-  font-size: 17px;
-  font-weight: bold;
-}
-
-/* line 485, ../SASS/master.scss */
-
-.committee a {
-  text-decoration: none;
-
-  color: #e5e8f0;
-
-  font-weight: bold;
-}
-
-/* line 489, ../SASS/master.scss */
-
-.committee a:hover {
-  color: #f0ece5;
-}
-
-/* line 501, ../SASS/master.scss */
-
+/* line 528, ../SASS/master.scss */
 .gallery {
-  margin-bottom: 60px;
-}
+  margin-bottom: 60px; }
+  /* line 530, ../SASS/master.scss */
+  .gallery .bridgeGL {
+    width: 80%;
+    margin: 40px auto;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px;
+    padding-left: 100px; }
+    @media screen and (min-width: 200px) and (max-width: 700px) {
+      /* line 530, ../SASS/master.scss */
+      .gallery .bridgeGL {
+        padding: unset; } }
+    /* line 539, ../SASS/master.scss */
+    .gallery .bridgeGL li {
+      display: inline;
+      margin-left: 5px;
+      line-height: 120px; }
+      @media screen and (min-width: 200px) and (max-width: 700px) {
+        /* line 539, ../SASS/master.scss */
+        .gallery .bridgeGL li {
+          display: block;
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+          line-height: unset; } }
+      /* line 550, ../SASS/master.scss */
+      .gallery .bridgeGL li:hover {
+        box-shadow: 1px 12px 5px #464646;
+        border-radius: 15px; }
+      /* line 554, ../SASS/master.scss */
+      .gallery .bridgeGL li img {
+        position: relative;
+        left: -3.5px;
+        border: 5px solid transparent;
+        border-radius: 15px;
+        float: none;
+        width: 22.22222%;
+        margin-left: 10px;
+        margin-top: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); }
+        @media screen and (min-width: 200px) and (max-width: 700px) {
+          /* line 554, ../SASS/master.scss */
+          .gallery .bridgeGL li img {
+            width: 90%;
+            margin-left: 5.5%;
+            margin-top: 30px; } }
 
-/* line 503, ../SASS/master.scss */
-
-.gallery .bridgeGL {
-  width: 80%;
-  margin: 40px auto;
-  padding: 15px;
-  padding-left: 100px;
-
-  align-items: center;
-}
-
-/* line 512, ../SASS/master.scss */
-
-.gallery .bridgeGL li {
-  display: inline;
-
-  margin-left: 5px;
-
-  line-height: 120px;
-}
-
-/* line 523, ../SASS/master.scss */
-
-.gallery .bridgeGL li:hover {
-  border-radius: 15px;
-  box-shadow: 1px 12px 5px #464646;
-}
-
-/* line 527, ../SASS/master.scss */
-
-.gallery .bridgeGL li img {
-  position: relative;
-  left: -3.5px;
-
-  float: none;
-
-  width: 22.22222%;
-  margin-top: 10px;
-  margin-left: 10px;
-
-  border: 5px solid transparent;
-  border-radius: 15px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* line 546, ../SASS/master.scss */
-
+/* line 573, ../SASS/master.scss */
 .contact {
-  height: auto;
-}
+  height: auto; }
+  /* line 575, ../SASS/master.scss */
+  .contact p {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    clear: both;
+    margin: -70px 0 100px 0; }
+  /* line 583, ../SASS/master.scss */
+  .contact #map {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); }
 
-/* line 548, ../SASS/master.scss */
-
-.contact p {
-  position: relative;
-
-  clear: both;
-
-  width: 100%;
-  margin: -70px 0 100px 0;
-
-  text-align: center;
-}
-
-/* line 556, ../SASS/master.scss */
-
-.contact #map {
-  position: relative;
-
-  width: 100%;
-  height: 400px;
-
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* line 565, ../SASS/master.scss */
-
+/* line 592, ../SASS/master.scss */
 section {
   position: relative;
-
-  box-sizing: border-box;
   width: 95%;
+  box-sizing: border-box;
   margin: 70px auto;
   padding: 20px;
-
   border-radius: 25px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 1em -10px 1em -1em #f5f6f9;
   /* background:red */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 1em -10px 1em -1em #f5f6f9;
-  /* background:red */
-}
-
-/* line 58, ../SASS/mixin.scss */
-
-section .about {
-  color: black;
-  background-color: transparent;
-
-  font-family: sans-serif;
-  font-size: 14px;
-}
-
-/* line 65, ../SASS/mixin.scss */
-
-section .title {
-  position: relative;
-
-  width: 50%;
-  height: 45px;
-  margin: 20px auto 40px auto;
-  padding-top: 15px;
-
-  cursor: default;
-  text-align: center;
-  text-transform: uppercase;
-
-  color: #67593b;
-  border-radius: 14px;
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-
-  font-family: sans-serif;
-  font-size: 25.2px;
-  font-weight: bold;
-}
-
-/* line 96, ../SASS/mixin.scss */
-
-section p {
-  position: relative;
-  top: 70px;
-
-  float: left;
-
-  width: 45%;
-}
-
-/* line 20, ../SASS/mixin.scss */
-
-section:after {
-  display: block;
-  clear: both;
-
-  padding-bottom: 80px;
-
-  content: '';
-}
-
-/* line 570, ../SASS/master.scss */
-
-#div1 p {
-  display: block;
-
-  width: 100%;
-  height: 150px;
-  margin: 20px 0;
-}
-
-/* line 577, ../SASS/master.scss */
-
-.register {
-  position: relative;
-
-  width: 91%;
-  margin: auto;
-
-  border-radius: 25px;
-  background-color: transparent;
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* line 20, ../SASS/mixin.scss */
-
-.register:after {
-  display: block;
-  clear: both;
-
-  padding-bottom: 80px;
-
-  content: '';
-}
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 1em -10px 1em -1em #f5f6f9
+  /* background:red */ }
+  /* line 58, ../SASS/mixin.scss */
+  section .about {
+    background-color: transparent;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: black; }
+  /* line 65, ../SASS/mixin.scss */
+  section .title {
+    position: relative;
+    width: 50%;
+    height: 45px;
+    color: #67593b;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 25.2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px auto 40px auto;
+    padding-top: 15px;
+    cursor: default;
+    border-radius: 14px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); }
+    @media screen and (min-width: 200px) and (max-width: 700px) {
+      /* line 65, ../SASS/mixin.scss */
+      section .title {
+        width: 80%;
+        font-size: 18px;
+        margin: 20px auto;
+        padding-top: 25px; } }
+    @media screen and (min-width: 701px) and (max-width: 810px) {
+      /* line 65, ../SASS/mixin.scss */
+      section .title {
+        width: 50%;
+        font-size: 19.8px;
+        margin: 20px auto;
+        padding-top: 25px; } }
+  /* line 96, ../SASS/mixin.scss */
+  section p {
+    position: relative;
+    top: 70px;
+    width: 45%;
+    float: left; }
+    @media screen and (min-width: 200px) and (max-width: 700px) {
+      /* line 96, ../SASS/mixin.scss */
+      section p {
+        width: 90%;
+        margin: 50px auto;
+        float: none;
+        clear: both;
+        text-align: justify; } }
+    @media screen and (min-width: 701px) and (max-width: 810px) {
+      /* line 96, ../SASS/mixin.scss */
+      section p {
+        width: 90%;
+        margin: 50px auto;
+        float: none;
+        clear: both;
+        text-align: justify; } }
+    @media screen and (min-width: 811px) and (max-width: 1024px) {
+      /* line 96, ../SASS/mixin.scss */
+      section p {
+        width: 90%;
+        margin: auto;
+        float: none;
+        text-align: justify; } }
+  /* line 20, ../SASS/mixin.scss */
+  section:after {
+    content: '';
+    display: block;
+    clear: both;
+    padding-bottom: 80px; }
 
 /* line 597, ../SASS/master.scss */
+#div1 p {
+  display: block;
+  width: 100%;
+  height: 150px;
+  margin: 20px 0; }
 
-.register p {
-  clear: both;
-
-  width: 70%;
-  margin: -10px auto;
-
-  text-align: center;
-  text-transform: uppercase;
-
-  font-size: 15px;
-  font-weight: 500;
-}
-
-/* line 610, ../SASS/master.scss */
-
-.register .formL {
+/* line 604, ../SASS/master.scss */
+.register {
   position: relative;
-
-  float: left;
-
-  width: 45%;
-  height: 500px;
-  margin: 10px 2% -20px 2%;
-  padding-top: 20px;
-  padding-left: 20px;
-}
-
-/* line 623, ../SASS/master.scss */
-
-.register .formL #infos {
-  position: relative;
-  top: 319px;
-  left: 150px;
-
-  clear: both;
-
-  padding: 7px;
-
-  cursor: default;
-
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #cecece;
-  box-shadow: 0px 0px 1px black;
-
-  font-size: 15px;
-  font-weight: bold;
-  font-variant: small-caps;
-  line-height: 17px;
-}
-
-/* line 638, ../SASS/master.scss */
-
-.register .formL #infos:hover,
-.register .formL #infos:active {
-  box-shadow: 0px 0px 15px black;
-}
-
-/* line 655, ../SASS/master.scss */
-
-.register .formL #Preview {
-  position: relative;
-  left: 40px;
-
-  float: left;
-  clear: both;
-
-  margin: 20px auto;
-
-  border-radius: 10%;
-  -webkit-box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* line 671, ../SASS/master.scss */
-
-.register .formR {
-  position: absolute;
-  z-index: 10;
-  top: 20px;
-  left: 550px;
-
-  float: right;
-
-  width: 45%;
-  height: 400px;
-  margin: 20px 3%;
-
+  width: 91%;
+  background-color: transparent;
+  margin: auto;
   border-radius: 25px;
-}
-
-/* line 714, ../SASS/master.scss */
-
-.register .formR #theerror {
-  position: relative;
-  top: 20px;
-
-  clear: both;
-
-  width: 80%;
-  height: auto;
-  height: auto;
-  margin: auto;
-  padding: 20px;
-
-  text-align: center;
-}
-
-/* line 724, ../SASS/master.scss */
-
-.register .formR #theerror p {
-  position: relative;
-  top: unset;
-
-  clear: both;
-
-  width: 100% auto;
-  margin: 0 auto;
-
-  text-align: center;
-
-  line-height: unset;
-}
-
-/* line 735, ../SASS/master.scss */
-
-.register .formcont {
-  position: relative;
-  z-index: 10;
-  top: 10px;
-
-  clear: both;
-
-  width: 100%;
-  height: 400px;
-  margin: auto;
-
-  background-color: #f8f9fb !important;
-}
-
-/* line 759, ../SASS/master.scss */
-
-.register .formcont #user-result,
-.register .formcont #user-email,
-.register .formcont #user-result2 {
-  position: relative;
-  top: 3px;
-  left: 10px;
-
-  float: left;
-
-  height: 30px;
-  padding: 7px;
-
-  font-size: 12px;
-  font-variant: small-caps;
-  line-height: 17px;
-}
-
-/* line 770, ../SASS/master.scss */
-
-.register .formcont fieldset {
-  float: left;
-
-  width: 42%;
-  margin-left: 20px;
-}
-
-/* line 784, ../SASS/master.scss */
-
-.register .formcont fieldset input {
-  float: left;
-  clear: right;
-}
-
-/* line 788, ../SASS/master.scss */
-
-.register .formcont fieldset label {
-  float: left;
-  clear: left;
-
-  width: 100px;
-
-  line-height: 20px;
-}
-
-/* line 795, ../SASS/master.scss */
-
-.register .formcont .rightit {
-  position: relative;
-
-  box-sizing: padding-box;
-  padding-left: 120px;
-}
-
-/* line 807, ../SASS/master.scss */
-
-.register form {
-  position: relative;
-  top: 10px;
-
-  width: 100%;
-  margin: auto;
-  padding-top: 20px;
-}
-
-/* line 813, ../SASS/master.scss */
-
-.register form label {
-  position: relative;
-
-  float: left;
-  clear: left;
-
-  width: 100px;
-  margin-top: -2px;
-  margin-bottom: 20px;
-  padding: 9px 0px 7px 0px;
-
-  cursor: default;
-  text-align: center;
-  letter-spacing: 0px;
-  text-transform: uppercase;
-
-  border-top: 2px solid rgba(207, 207, 207, 0.8);
-  border-bottom: 2px solid rgba(207, 207, 207, 0.8);
-  border-left: 2px solid rgba(207, 207, 207, 0.8);
-  border-top-left-radius: 10px 10px;
-  border-bottom-left-radius: 10px 10px;
-  background-image: -webkit-linear-gradient(to right, #cecece, #efefef);
-  background-image: -moz-linear-gradient(to right, #cecece, #efefef);
-  background-image: -o-linear-gradient(to right, #cecece, #efefef);
-  background-image: linear-gradient(to right, #cecece, #efefef);
-  -webkit-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2);
-
-  font-family: sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-/* line 850, ../SASS/master.scss */
-
-.register form input {
-  position: relative;
-  top: -2px;
-
-  float: left;
-  clear: right;
-
-  padding-top: 9px;
-  padding-bottom: 7px;
-  padding-left: 8px;
-
-  border-top: 2px solid rgba(207, 207, 207, 0.8);
-  border-right: 2px solid rgba(207, 207, 207, 0.8);
-  border-bottom: 2px solid rgba(207, 207, 207, 0.8);
-  border-left: 0px;
-  border-top-right-radius: 10px 10px;
-  border-bottom-right-radius: 10px 10px;
-  background-color: rgba(207, 207, 207, 0.5);
-  -webkit-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
-
-  font-family: serif;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-/* line 871, ../SASS/master.scss */
-
-.register form input[type="text"] {
-  width: 200px;
-
-  text-align: left;
-  letter-spacing: 0px;
-}
-
-/* line 879, ../SASS/master.scss */
-
-.register form input[type="submit"] {
-  position: relative;
-  left: -150px;
-
-  width: auto;
-  height: 55px;
-  padding: 10px;
-
-  text-transform: uppercase;
-
-  border: 0;
-  border-top-left-radius: 10px 10px;
-  border-bottom-left-radius: 10px 10px;
-  background: filter-gradient(#fefefe, #fefefe, horizontal);
-  background-color: #fefefe;
-  background-image: linear-gradient(top, #fefefe 0%, #cecece 23%, #cecece 79%, #fefefe 100%);
-
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 25px;
-}
-
-/* line 900, ../SASS/master.scss */
-
-.register form input[type="email"] {
-  width: 200px;
-
-  text-align: left;
-  letter-spacing: 0px;
-}
-
-/* line 908, ../SASS/master.scss */
-
-.register form input[type="file"] {
-  position: relative;
-  z-index: -1;
-
-  overflow: hidden;
-
-  width: 0.1px;
-  height: 0.1px;
-
-  opacity: 0;
-}
-
-/* line 916, ../SASS/master.scss */
-
-.register form input:hover {
-  border: 0;
-}
-
-/* line 919, ../SASS/master.scss */
-
-.register form input:active {
-  border: 0;
-}
-
-/* line 928, ../SASS/master.scss */
-
-.register form button {
-  height: 3px;
-}
-
-/* line 931, ../SASS/master.scss */
-
-.register form textarea {
-  position: relative;
-
-  float: left;
-
-  width: 220px;
-  height: 80px;
-  margin-top: -2px;
-  margin-bottom: 10px;
-  padding: 1px;
-
-  border-top: 2px solid rgba(207, 207, 207, 0.8);
-  border-right: 2px solid rgba(207, 207, 207, 0.8);
-  border-bottom: 2px solid rgba(207, 207, 207, 0.8);
-  border-left: 0px;
-  border-top-right-radius: 10px 10px;
-  border-bottom-right-radius: 10px 10px;
-  background-color: rgba(207, 207, 207, 0.5);
-  -webkit-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
-
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-/* line 953, ../SASS/master.scss */
-
-.register form select {
-  position: relative;
-  top: -2px;
-
-  float: left;
-  clear: right;
-
-  width: 120px;
-  padding-top: 9px;
-  padding-bottom: 7px;
-  padding-left: 8px;
-
-  border-top: 2px solid rgba(207, 207, 207, 0.8);
-  border-right: 2px solid rgba(207, 207, 207, 0.8);
-  border-bottom: 2px solid rgba(207, 207, 207, 0.8);
-  border-left: 0px;
-  border-top-right-radius: 10px 10px;
-  border-bottom-right-radius: 10px 10px;
-  background: url("../img/arrow-down-black.png") 90%/15% no-repeat #eee;
-  background-color: rgba(207, 207, 207, 0.5);
-  -webkit-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
-
-  font-family: serif;
-  font-size: 12px;
-  font-weight: 600;
-
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-/* line 980, ../SASS/master.scss */
-
-.register form fieldset {
-  width: 100%;
-}
-
-/* line 988, ../SASS/master.scss */
-
-.register form fieldset .bd {
-  width: 70px;
-  margin: 0;
-}
-
-/* line 992, ../SASS/master.scss */
-
-.register form fieldset select {
-  float: left;
-
-  margin-top: 2px;
-  padding-top: 11px;
-  padding-bottom: 12px;
-  padding-left: 8px;
-}
-
-/* line 1003, ../SASS/master.scss */
-
-.register form fieldset label {
-  float: left;
-  clear: none;
-
-  width: 50px;
-  margin-left: 10px;
-
-  font-size: 10px;
-}
-
-/* line 1014, ../SASS/master.scss */
-
-.register form fieldset .aging {
-  line-height: 25px;
-}
-
-/* line 1017, ../SASS/master.scss */
-
-.register form fieldset input {
-  float: left;
-  clear: none;
-
-  width: 80px;
-  height: 25px;
-
-  line-height: 25px;
-}
-
-/* line 1029, ../SASS/master.scss */
-
-.register form .pslb {
-  left: 0;
-
-  width: auto;
-  margin: auto;
-  padding: 0;
-
-  cursor: pointer;
-
-  border: 0;
-  border-radius: unset;
-  background: transparent;
-  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
-
-  line-height: 0;
-}
-
-/* line 1046, ../SASS/master.scss */
-
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); }
+  /* line 20, ../SASS/mixin.scss */
+  .register:after {
+    content: '';
+    display: block;
+    clear: both;
+    padding-bottom: 80px; }
+  @media screen and (min-width: 200px) and (max-width: 700px) {
+    /* line 604, ../SASS/master.scss */
+    .register {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2); } }
+  @media screen and (min-width: 811px) and (max-width: 1024px) {
+    /* line 604, ../SASS/master.scss */
+    .register {
+      width: 100%; } }
+  /* line 624, ../SASS/master.scss */
+  .register p {
+    width: 70%;
+    margin: -10px auto;
+    clear: both;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500; }
+    @media screen and (min-width: 200px) and (max-width: 700px) {
+      /* line 624, ../SASS/master.scss */
+      .register p {
+        visibility: visible;
+        z-index: 10; } }
+  /* line 637, ../SASS/master.scss */
+  .register .formL {
+    position: relative;
+    width: 45%;
+    float: left;
+    height: 500px;
+    margin: 10px 2% -20px 2%;
+    padding-top: 20px;
+    padding-left: 20px; }
+    /* line 650, ../SASS/master.scss */
+    .register .formL #infos {
+      position: relative;
+      top: 319px;
+      left: 150px;
+      clear: both;
+      font-variant: small-caps;
+      background-color: #cecece;
+      padding: 7px;
+      line-height: 17px;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      cursor: default;
+      box-shadow: 0px 0px 1px black; }
+      /* line 665, ../SASS/master.scss */
+      .register .formL #infos:hover, .register .formL #infos:active {
+        box-shadow: 0px 0px 15px black; }
+    @media screen and (min-width: 200px) and (max-width: 700px) {
+      /* line 637, ../SASS/master.scss */
+      .register .formL {
+        width: 100%;
+        margin: auto;
+        padding-left: 10px;
+        float: none;
+        border-radius: 15px; } }
+    @media screen and (min-width: 811px) and (max-width: 1024px) {
+      /* line 637, ../SASS/master.scss */
+      .register .formL {
+        width: 60%; } }
+    /* line 682, ../SASS/master.scss */
+    .register .formL #Preview {
+      position: relative;
+      clear: both;
+      float: left;
+      margin: 20px auto;
+      left: 40px;
+      border-radius: 10%;
+      box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.2); }
+      @media screen and (min-width: 200px) and (max-width: 700px) {
+        /* line 682, ../SASS/master.scss */
+        .register .formL #Preview {
+          float: none;
+          margin: auto; } }
+  /* line 698, ../SASS/master.scss */
+  .register .formR {
+    position: absolute;
+    top: 20px;
+    left: 550px;
+    z-index: 10;
+    width: 45%;
+    float: right;
+    height: 400px;
+    margin: 20px 3%;
+    border-radius: 25px; }
+    @media screen and (min-width: 200px) and (max-width: 700px) {
+      /* line 698, ../SASS/master.scss */
+      .register .formR {
+        position: relative;
+        display: none;
+        top: -500px;
+        left: 0;
+        width: 100%;
+        margin: auto;
+        float: none;
+        border-radius: 15px; } }
+    @media screen and (min-width: 701px) and (max-width: 810px) {
+      /* line 698, ../SASS/master.scss */
+      .register .formR {
+        display: none;
+        top: -500px;
+        width: 100%;
+        margin: auto;
+        height: 200px;
+        float: none;
+        border-radius: 15px; } }
+    @media screen and (min-width: 811px) and (max-width: 1024px) {
+      /* line 698, ../SASS/master.scss */
+      .register .formR {
+        width: 37%;
+        border: 2px black solid;
+        visibility: visible; } }
+    /* line 741, ../SASS/master.scss */
+    .register .formR #theerror {
+      position: relative;
+      clear: both;
+      top: 20px;
+      height: auto;
+      width: 80%;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+      height: auto; }
+      /* line 751, ../SASS/master.scss */
+      .register .formR #theerror p {
+        position: relative;
+        margin: 0 auto;
+        clear: both;
+        width: 100% auto;
+        text-align: center;
+        line-height: unset;
+        top: unset; }
+  /* line 762, ../SASS/master.scss */
+  .register .formcont {
+    position: relative;
+    clear: both;
+    margin: auto;
+    width: 100%;
+    height: 400px;
+    top: 10px;
+    background-color: #f8f9fb !important;
+    z-index: 10; }
+    @media screen and (min-width: 200px) and (max-width: 700px) {
+      /* line 762, ../SASS/master.scss */
+      .register .formcont {
+        height: auto; } }
+    @media screen and (min-width: 701px) and (max-width: 810px) {
+      /* line 762, ../SASS/master.scss */
+      .register .formcont {
+        height: auto; } }
+    @media screen and (min-width: 811px) and (max-width: 1024px) {
+      /* line 762, ../SASS/master.scss */
+      .register .formcont {
+        height: auto; } }
+    /* line 786, ../SASS/master.scss */
+    .register .formcont #user-result, .register .formcont #user-email, .register .formcont #user-result2 {
+      position: relative;
+      top: 3px;
+      left: 10px;
+      float: left;
+      font-variant: small-caps;
+      padding: 7px;
+      line-height: 17px;
+      font-size: 12px;
+      height: 30px; }
+    /* line 797, ../SASS/master.scss */
+    .register .formcont fieldset {
+      width: 42%;
+      float: left;
+      margin-left: 20px; }
+      @media screen and (min-width: 200px) and (max-width: 700px) {
+        /* line 797, ../SASS/master.scss */
+        .register .formcont fieldset {
+          display: block;
+          float: left;
+          width: 100%;
+          clear: both;
+          margin: auto; } }
+      @media screen and (min-width: 811px) and (max-width: 1024px) {
+        /* line 797, ../SASS/master.scss */
+        .register .formcont fieldset {
+          width: 40%; } }
+      /* line 811, ../SASS/master.scss */
+      .register .formcont fieldset input {
+        float: left;
+        clear: right; }
+      /* line 815, ../SASS/master.scss */
+      .register .formcont fieldset label {
+        float: left;
+        clear: left;
+        line-height: 20px;
+        width: 100px; }
+    /* line 822, ../SASS/master.scss */
+    .register .formcont .rightit {
+      position: relative;
+      padding-left: 120px;
+      box-sizing: padding-box; }
+      @media screen and (min-width: 200px) and (max-width: 700px) {
+        /* line 822, ../SASS/master.scss */
+        .register .formcont .rightit {
+          padding: 0; } }
+      @media screen and (min-width: 701px) and (max-width: 810px) {
+        /* line 822, ../SASS/master.scss */
+        .register .formcont .rightit {
+          padding: 0; } }
+  /* line 834, ../SASS/master.scss */
+  .register form {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+    z-index: 5; }
+    /* line 841, ../SASS/master.scss */
+    .register form label {
+      position: relative;
+      cursor: default;
+      float: left;
+      width: 100px;
+      font-size: 12px;
+      font-family: sans-serif;
+      font-weight: 600;
+      text-align: center;
+      letter-spacing: 0px;
+      margin-top: -2px;
+      margin-bottom: 20px;
+      padding: 9px 0px 7px 0px;
+      text-transform: uppercase;
+      clear: left;
+      border-top: 2px solid rgba(207, 207, 207, 0.8);
+      border-left: 2px solid rgba(207, 207, 207, 0.8);
+      border-bottom: 2px solid rgba(207, 207, 207, 0.8);
+      border-top-left-radius: 10px 10px;
+      border-bottom-left-radius: 10px 10px;
+      background-image: -webkit-linear-gradient(to right, #cecece, #efefef);
+      background-image: -webkit-linear-gradient(left, #cecece, #efefef);
+      background-image: linear-gradient(to right, #cecece, #efefef);
+      box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2); }
+      @media screen and (min-width: 200px) and (max-width: 700px) {
+        /* line 841, ../SASS/master.scss */
+        .register form label {
+          font-size: 10px;
+          font-family: sans-serif;
+          font-weight: 900;
+          color: #000;
+          width: 75px;
+          line-height: 22px;
+          margin: 9px 0; } }
+    /* line 878, ../SASS/master.scss */
+    .register form input {
+      position: relative;
+      font-family: serif;
+      font-size: 12px;
+      font-weight: 600;
+      float: left;
+      padding-top: 9px;
+      padding-bottom: 7px;
+      padding-left: 8px;
+      top: -2px;
+      clear: right;
+      background-color: rgba(207, 207, 207, 0.5);
+      border-top: 2px solid rgba(207, 207, 207, 0.8);
+      border-right: 2px solid rgba(207, 207, 207, 0.8);
+      border-bottom: 2px solid rgba(207, 207, 207, 0.8);
+      border-left: 0px;
+      border-top-right-radius: 10px 10px;
+      border-bottom-right-radius: 10px 10px;
+      box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2); }
+      /* line 899, ../SASS/master.scss */
+      .register form input[type="text"] {
+        text-align: left;
+        width: 200px;
+        letter-spacing: 0px; }
+        @media screen and (min-width: 200px) and (max-width: 700px) {
+          /* line 899, ../SASS/master.scss */
+          .register form input[type="text"] {
+            width: 180px; } }
+      /* line 907, ../SASS/master.scss */
+      .register form input[type="submit"] {
+        position: relative;
+        left: -150px;
+        height: 55px;
+        width: auto;
+        padding: 10px;
+        line-height: 25px;
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: bold;
+        border: 0;
+        border-top-left-radius: 10px 10px;
+        border-bottom-left-radius: 10px 10px;
+        text-transform: uppercase;
+        background-color: #fefefe;
+        background: filter-gradient(#fefefe, #fefefe, horizontal);
+        background-image: -webkit-linear-gradient(top, #fefefe 0%, #cecece 23%, #cecece 79%, #fefefe 100%);
+        background-image: linear-gradient(top, #fefefe 0%, #cecece 23%, #cecece 79%, #fefefe 100%); }
+        @media screen and (min-width: 200px) and (max-width: 700px) {
+          /* line 907, ../SASS/master.scss */
+          .register form input[type="submit"] {
+            left: 0; } }
+      /* line 928, ../SASS/master.scss */
+      .register form input[type="email"] {
+        text-align: left;
+        width: 200px;
+        letter-spacing: 0px; }
+        @media screen and (min-width: 200px) and (max-width: 700px) {
+          /* line 928, ../SASS/master.scss */
+          .register form input[type="email"] {
+            width: 180px; } }
+      /* line 936, ../SASS/master.scss */
+      .register form input[type="file"] {
+        overflow: hidden;
+        position: relative;
+        z-index: -1;
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0; }
+      /* line 944, ../SASS/master.scss */
+      .register form input:hover {
+        border: 0; }
+      /* line 947, ../SASS/master.scss */
+      .register form input:active {
+        border: 0; }
+      @media screen and (min-width: 200px) and (max-width: 700px) {
+        /* line 878, ../SASS/master.scss */
+        .register form input {
+          font-size: 12px;
+          padding: 11px 0px 9px 0px;
+          margin: 12px 0; } }
+    /* line 956, ../SASS/master.scss */
+    .register form button {
+      height: 3px; }
+    /* line 959, ../SASS/master.scss */
+    .register form textarea {
+      position: relative;
+      float: left;
+      margin-top: -2px;
+      margin-bottom: 10px;
+      padding: 1px;
+      width: 220px;
+      height: 80px;
+      background-color: rgba(207, 207, 207, 0.5);
+      border-top: 2px solid rgba(207, 207, 207, 0.8);
+      border-right: 2px solid rgba(207, 207, 207, 0.8);
+      border-bottom: 2px solid rgba(207, 207, 207, 0.8);
+      border-left: 0px;
+      border-top-right-radius: 10px 10px;
+      border-bottom-right-radius: 10px 10px;
+      box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; }
+    /* line 981, ../SASS/master.scss */
+    .register form select {
+      position: relative;
+      font-family: serif;
+      width: 120px;
+      font-size: 12px;
+      font-weight: 600;
+      float: left;
+      padding-top: 9px;
+      padding-bottom: 7px;
+      padding-left: 8px;
+      top: -2px;
+      clear: right;
+      background-color: rgba(207, 207, 207, 0.5);
+      background: url("../img/arrow-down-black.png") 90%/15% no-repeat #eee;
+      border-top: 2px solid rgba(207, 207, 207, 0.8);
+      border-right: 2px solid rgba(207, 207, 207, 0.8);
+      border-bottom: 2px solid rgba(207, 207, 207, 0.8);
+      border-left: 0px;
+      border-top-right-radius: 10px 10px;
+      border-bottom-right-radius: 10px 10px;
+      box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.2);
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; }
+    /* line 1008, ../SASS/master.scss */
+    .register form fieldset {
+      width: 100%; }
+      @media screen and (min-width: 200px) and (max-width: 700px) {
+        /* line 1011, ../SASS/master.scss */
+        .register form fieldset span {
+          float: left;
+          clear: both; } }
+      /* line 1016, ../SASS/master.scss */
+      .register form fieldset .bd {
+        width: 70px;
+        margin: 0; }
+      /* line 1020, ../SASS/master.scss */
+      .register form fieldset select {
+        float: left;
+        padding-top: 11px;
+        padding-bottom: 12px;
+        margin-top: 2px;
+        padding-left: 8px; }
+        @media screen and (min-width: 200px) and (max-width: 700px) {
+          /* line 1020, ../SASS/master.scss */
+          .register form fieldset select {
+            float: left;
+            clear: both; } }
+      /* line 1031, ../SASS/master.scss */
+      .register form fieldset label {
+        width: 50px;
+        font-size: 10px;
+        clear: none;
+        float: left;
+        margin-left: 10px; }
+        @media screen and (min-width: 200px) and (max-width: 700px) {
+          /* line 1031, ../SASS/master.scss */
+          .register form fieldset label {
+            float: left;
+            clear: both; } }
+      /* line 1042, ../SASS/master.scss */
+      .register form fieldset .aging {
+        line-height: 25px; }
+      /* line 1045, ../SASS/master.scss */
+      .register form fieldset input {
+        width: 80px;
+        line-height: 25px;
+        height: 25px;
+        float: left;
+        clear: none; }
+        @media screen and (min-width: 200px) and (max-width: 700px) {
+          /* line 1045, ../SASS/master.scss */
+          .register form fieldset input {
+            float: none;
+            clear: both; } }
+    /* line 1057, ../SASS/master.scss */
+    .register form .pslb {
+      cursor: pointer;
+      width: auto;
+      left: 0;
+      line-height: 0;
+      margin: auto;
+      padding: 0;
+      background: transparent;
+      border-radius: unset;
+      border: 0;
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2); }
+
+/* line 1074, ../SASS/master.scss */
 .mobileReg {
   position: relative;
-}
-
-/* line 1048, ../SASS/master.scss */
-
-.mobileReg #theerror {
-  position: relative;
-  top: 20px;
-
-  clear: both;
-
-  width: 80%;
-  height: auto;
-  height: auto;
-  margin: auto;
-  padding: 20px;
-
-  text-align: center;
-}
-
-/* line 1058, ../SASS/master.scss */
-
-.mobileReg #theerror p {
-  position: relative;
-  top: unset;
-
-  clear: both;
-
-  width: 100% auto;
-  margin: 0 auto;
-
-  text-align: center;
-
-  line-height: unset;
-}
-
-/* line 1069, ../SASS/master.scss */
-
-.mobileReg form {
-  width: 100%;
-}
-
-/* line 1071, ../SASS/master.scss */
-
-.mobileReg form #Preview {
-  position: relative;
-  left: 10%;
-
-  clear: both;
-
-  margin: 20px auto;
-  margin-left: -20px;
-
-  border-radius: 50%;
-  -webkit-box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.9);
-  -moz-box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.9);
-  box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.9);
-}
-
-/* line 1082, ../SASS/master.scss */
-
-.mobileReg form #user-result {
-  position: relative;
-  top: 32px;
-  left: 10px;
-
-  float: left;
-
-  height: 30px;
-  padding: 7px;
-
-  font-size: 12px;
-  font-variant: small-caps;
-  line-height: 17px;
-}
-
-/* line 1093, ../SASS/master.scss */
-
-.mobileReg form #user-result2 {
-  position: relative;
-  top: 32px;
-  left: 10px;
-
-  float: left;
-
-  height: 30px;
-  padding: 7px;
-
-  font-size: 12px;
-  font-variant: small-caps;
-  line-height: 17px;
-}
-
-/* line 1104, ../SASS/master.scss */
-
-.mobileReg form #user-email {
-  position: relative;
-  top: 32px;
-  left: 10px;
-
-  float: left;
-
-  height: 30px;
-  padding: 7px;
-
-  font-size: 12px;
-  font-variant: small-caps;
-  line-height: 17px;
-}
-
-/* line 1115, ../SASS/master.scss */
-
-.mobileReg form #infos {
-  position: relative;
-  top: 32px;
-  left: 10px;
-
-  float: left;
-
-  padding: 7px;
-
-  cursor: default;
-
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #cecece;
-  box-shadow: 0px 0px 1px black;
-
-  font-size: 12px;
-  font-variant: small-caps;
-  line-height: 17px;
-}
-
-/* line 1129, ../SASS/master.scss */
-
-.mobileReg form #infos:hover,
-.mobileReg form #infos:active {
-  box-shadow: 0px 0px 15px black;
-}
-
-/* line 1133, ../SASS/master.scss */
-
-.mobileReg form input {
-  float: left;
-  clear: right;
-
-  width: 100%;
-  height: 40px;
-  margin: 5px 0;
-  padding: 5px 4px;
-
-  border-radius: 10px;
-
-  font-size: 15px;
-  line-height: 32px;
-}
-
-/* line 1143, ../SASS/master.scss */
-
-.mobileReg form input[type="file"] {
-  position: relative;
-  z-index: -1;
-
-  overflow: hidden;
-
-  width: 0.1px;
-  height: 0.1px;
-
-  opacity: 0;
-}
-
-/* line 1151, ../SASS/master.scss */
-
-.mobileReg form input[type="submit"] {
-  top: 10px;
-
-  float: none;
-  clear: both;
-
-  width: 60%;
-  height: 50px;
-  margin: -10px auto;
-
-  background-image: linear-gradient(to bottom, #cecaca, #f3f2f2);
-  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
-  -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
-
-  font-family: Helvetica;
-  font-size: 18px;
-  font-weight: bold;
-  font-variant: small-caps;
-}
-
-/* line 1167, ../SASS/master.scss */
-
-.mobileReg form input[type="text"],
-.mobileReg form input[type="email"] {
-  border: 1px solid #ccc;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
-  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
-}
-
-/* line 1175, ../SASS/master.scss */
-
-.mobileReg form select {
-  float: left;
-  clear: both;
-
-  width: 100%;
-  height: 40px;
-  margin: 5px 0;
-  padding: 5px 4px;
-
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
-  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
-
-  font-size: 15px;
-}
-
-/* line 1188, ../SASS/master.scss */
-
-.mobileReg form textarea {
-  float: left;
-  clear: both;
-
-  width: 100%;
-  height: 60px;
-  margin: 5px 0;
-  padding: 5px 4px;
-
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
-  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
-
-  font-size: 15px;
-}
-
-/* line 1201, ../SASS/master.scss */
-
-.mobileReg form label {
-  float: left;
-  clear: both;
-
-  margin: 30px 5px 1px 0;
-  padding: 10px 10px;
-
-  text-transform: uppercase;
-
-  color: #001122;
-  border-radius: 10px;
-  background-color: #e5e8f0;
-  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
-  -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
-
-  font-size: 15px;
-  font-weight: bold;
-}
-
-/* line 1217, ../SASS/master.scss */
-
-.mobileReg form .pslb {
-  background-color: transparent;
-  box-shadow: none;
-}
-
-/* line 1225, ../SASS/master.scss */
-
+  z-index: 1; }
+  /* line 1077, ../SASS/master.scss */
+  .mobileReg #theerror {
+    position: relative;
+    clear: both;
+    top: 20px;
+    height: auto;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    height: auto; }
+    /* line 1087, ../SASS/master.scss */
+    .mobileReg #theerror p {
+      position: relative;
+      margin: 0 auto;
+      clear: both;
+      width: 100% auto;
+      text-align: center;
+      line-height: unset;
+      top: unset; }
+  /* line 1098, ../SASS/master.scss */
+  .mobileReg form {
+    width: 100%;
+    z-index: 1; }
+    /* line 1101, ../SASS/master.scss */
+    .mobileReg form #Preview {
+      position: relative;
+      clear: both;
+      margin: 20px auto;
+      margin-left: -20px;
+      left: 10%;
+      border-radius: 50%;
+      box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.9);
+      -webkit-box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.9);
+      -moz-box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.9); }
+    /* line 1112, ../SASS/master.scss */
+    .mobileReg form #user-result {
+      position: relative;
+      top: 32px;
+      left: 10px;
+      float: left;
+      font-variant: small-caps;
+      padding: 7px;
+      line-height: 17px;
+      font-size: 12px;
+      height: 30px; }
+    /* line 1123, ../SASS/master.scss */
+    .mobileReg form #user-result2 {
+      position: relative;
+      top: 32px;
+      left: 10px;
+      float: left;
+      font-variant: small-caps;
+      padding: 7px;
+      line-height: 17px;
+      font-size: 12px;
+      height: 30px; }
+    /* line 1134, ../SASS/master.scss */
+    .mobileReg form #user-email {
+      position: relative;
+      top: 32px;
+      left: 10px;
+      float: left;
+      font-variant: small-caps;
+      padding: 7px;
+      line-height: 17px;
+      font-size: 12px;
+      height: 30px; }
+    /* line 1145, ../SASS/master.scss */
+    .mobileReg form #infos {
+      position: relative;
+      top: 32px;
+      left: 10px;
+      float: left;
+      font-variant: small-caps;
+      background-color: #cecece;
+      padding: 7px;
+      line-height: 17px;
+      font-size: 12px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      cursor: default;
+      box-shadow: 0px 0px 1px black; }
+      /* line 1159, ../SASS/master.scss */
+      .mobileReg form #infos:hover, .mobileReg form #infos:active {
+        box-shadow: 0px 0px 15px black; }
+    /* line 1163, ../SASS/master.scss */
+    .mobileReg form input {
+      width: 100%;
+      float: left;
+      clear: right;
+      height: 40px;
+      line-height: 32px;
+      font-size: 15px;
+      margin: 5px 0;
+      border-radius: 10px;
+      padding: 5px 4px; }
+      /* line 1173, ../SASS/master.scss */
+      .mobileReg form input[type="file"] {
+        overflow: hidden;
+        position: relative;
+        z-index: -1;
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0; }
+      /* line 1181, ../SASS/master.scss */
+      .mobileReg form input[type="submit"] {
+        width: 60%;
+        top: 10px;
+        float: none;
+        clear: both;
+        background-image: -webkit-linear-gradient(top, #cecaca, #f3f2f2);
+        background-image: linear-gradient(to bottom, #cecaca, #f3f2f2);
+        margin: -10px auto;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: Helvetica;
+        font-variant: small-caps;
+        height: 50px;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
+        -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
+        -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9); }
+      /* line 1197, ../SASS/master.scss */
+      .mobileReg form input[type="text"], .mobileReg form input[type="email"] {
+        border: 1px solid #ccc;
+        background-color: #fff;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+        -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+        -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9); }
+    /* line 1205, ../SASS/master.scss */
+    .mobileReg form select {
+      float: left;
+      clear: both;
+      margin: 5px 0;
+      width: 100%;
+      padding: 5px 4px;
+      font-size: 15px;
+      border-radius: 10px;
+      height: 40px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+      -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+      -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9); }
+    /* line 1218, ../SASS/master.scss */
+    .mobileReg form textarea {
+      float: left;
+      clear: both;
+      margin: 5px 0;
+      width: 100%;
+      padding: 5px 4px;
+      font-size: 15px;
+      border-radius: 10px;
+      height: 60px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+      -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+      -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9); }
+    /* line 1231, ../SASS/master.scss */
+    .mobileReg form label {
+      float: left;
+      clear: both;
+      padding: 10px 10px;
+      border-radius: 10px;
+      margin: 30px 5px 1px 0;
+      color: #001122;
+      background-color: #e5e8f0;
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
+      -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
+      -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9); }
+    /* line 1247, ../SASS/master.scss */
+    .mobileReg form .pslb {
+      background-color: transparent;
+      box-shadow: none; }
+
+/* line 1255, ../SASS/master.scss */
 footer {
-  position: relative;
-
   width: 100%;
   height: 220px;
-
   background-color: #e5e8ef;
-  -webkit-box-shadow: 0 -17px 11px -5px rgba(0, 0, 0, 0.75), inset 0 27px 21px -10px #706c70;
-  -moz-box-shadow: 0 -17px 11px -5px rgba(0, 0, 0, 0.75), inset 0 27px 21px -10px #706c70;
-  box-shadow: 0 -17px 11px -5px rgba(0, 0, 0, 0.75), inset 0 27px 21px -10px #706c70;
-}
-
-/* line 1237, ../SASS/master.scss */
-
-footer .content {
   position: relative;
-
-  width: 100%;
-  margin: auto;
-}
-
-/* line 1241, ../SASS/master.scss */
-
-footer .content ul {
-  position: relative;
-  top: 70px;
-
-  display: block;
-
-  width: 40%;
-  margin: auto;
-  padding-top: 10px;
-
-  text-align: center;
-
-  border-radius: 15px;
-  background-color: #f5f6f9;
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* line 1259, ../SASS/master.scss */
-
-footer .content li {
-  display: inline;
-
-  width: 33.33333%;
-  margin: 8%;
-
-  line-height: 40px;
-}
-
-/* line 1273, ../SASS/master.scss */
-
-footer .content .below {
-  position: relative;
-  top: 80px;
-
-  width: 100%;
-
-  align-items: center;
-}
-
-/* line 1281, ../SASS/master.scss */
-
-footer .content .below p {
-  width: 80%;
-  margin: 0px auto 20px auto;
-
-  text-align: center;
-
-  text-shadow: 3px 1px 0 #ccc;
-
-  font-size: 15px;
-}
-
-/* line 1290, ../SASS/master.scss */
-
-footer .content .below p span {
-  text-transform: uppercase;
-
-  font-weight: bold;
-}
+  box-shadow: 0 -17px 11px -5px rgba(0, 0, 0, 0.75), inset 0 27px 21px -10px #706c70; }
+  @media screen and (min-width: 200px) and (max-width: 700px) {
+    /* line 1255, ../SASS/master.scss */
+    footer {
+      height: 160px; } }
+  /* line 1267, ../SASS/master.scss */
+  footer .content {
+    margin: auto;
+    width: 100%;
+    position: relative; }
+    /* line 1271, ../SASS/master.scss */
+    footer .content ul {
+      width: 40%;
+      text-align: center;
+      margin: auto;
+      padding-top: 10px;
+      position: relative;
+      top: 70px;
+      display: block;
+      border-radius: 15px;
+      background-color: #f5f6f9;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); }
+      @media screen and (min-width: 200px) and (max-width: 700px) {
+        /* line 1271, ../SASS/master.scss */
+        footer .content ul {
+          top: 40px;
+          width: 85%; } }
+    /* line 1289, ../SASS/master.scss */
+    footer .content li {
+      width: 33.33333%;
+      display: inline;
+      line-height: 40px;
+      margin: 8%; }
+      @media screen and (min-width: 200px) and (max-width: 700px) {
+        /* line 1289, ../SASS/master.scss */
+        footer .content li {
+          width: 100% / 3; }
+          /* line 1296, ../SASS/master.scss */
+          footer .content li img {
+            width: 10%; } }
+    /* line 1303, ../SASS/master.scss */
+    footer .content .below {
+      width: 100%;
+      position: relative;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      top: 80px; }
+      @media screen and (min-width: 200px) and (max-width: 700px) {
+        /* line 1303, ../SASS/master.scss */
+        footer .content .below {
+          top: 50px; } }
+      /* line 1311, ../SASS/master.scss */
+      footer .content .below p {
+        width: 80%;
+        text-align: center;
+        text-shadow: 3px 1px 0 #ccc;
+        font-size: 15px;
+        margin: 0px auto 20px auto; }
+        @media screen and (min-width: 200px) and (max-width: 700px) {
+          /* line 1311, ../SASS/master.scss */
+          footer .content .below p {
+            font-size: 12px; } }
+        /* line 1320, ../SASS/master.scss */
+        footer .content .below p span {
+          text-transform: uppercase;
+          font-weight: bold; }
 
 /*# sourceMappingURL=master.css.map */
-
-@media screen and (min-width: 200px) and (max-width: 700px) {
-  /* line 13, ../SASS/master.scss */
-
-  #main-nav {
-    position: absolute;
-
-    width: 100%;
-    height: 50px;
-    margin: auto;
-  }
-
-  /* line 31, ../SASS/master.scss */
-
-  #main-nav span {
-    display: block;
-    float: right;
-
-    margin-right: 10px;
-
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 50px;
-  }
-
-  /* line 40, ../SASS/master.scss */
-
-  #main-nav span a {
-    padding: 15px;
-
-    text-transform: uppercase;
-  }
-
-  /* line 48, ../SASS/master.scss */
-
-  #main-nav .logo {
-    width: 40%;
-    padding-left: 70px;
-
-    background: url("../img/BridgeMB.png") no-repeat 15px 2px;
-
-    font-size: 0px;
-    font-weight: 700;
-    line-height: 1px;
-  }
-
-  /* line 69, ../SASS/master.scss */
-
-  #main-nav .logo a {
-    position: absolute;
-    top: 0;
-
-    width: 40%;
-    height: 50px;
-
-    background-color: transparent !important;
-  }
-
-  /* line 76, ../SASS/master.scss */
-
-  #main-nav .logo:after {
-    content: 'The Bridge';
-
-    font-family: "Chonburi";
-    font-size: 17px;
-  }
-
-  /* line 126, ../SASS/master.scss */
-
-  #main-nav ul {
-    z-index: 10;
-
-    display: none;
-
-    width: 40%;
-    height: 700px;
-    margin: 0;
-
-    background-color: #dee3ec;
-  }
-
-  /* line 155, ../SASS/master.scss */
-
-  #main-nav ul li {
-    display: block;
-
-    width: 100%;
-    height: auto;
-    padding: 15px 0;
-
-    text-align: center;
-
-    box-shadow: 1px 1px 5px #464646;
-
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 40px;
-  }
-
-  /* line 172, ../SASS/master.scss */
-
-  #main-nav ul li:hover {
-    box-shadow: 1px 12px 5px #464646;
-  }
-
-  /* line 198, ../SASS/master.scss */
-
-  #main-nav ul li a:hover {
-    overflow: unset;
-
-    background-color: unset;
-    box-shadow: unset;
-  }
-
-  /* line 216, ../SASS/master.scss */
-
-  .banner {
-    top: -20px;
-
-    height: 620px;
-  }
-
-  /* line 258, ../SASS/master.scss */
-
-  .wrapper {
-    margin-top: -2px;
-  }
-
-  /* line 273, ../SASS/master.scss */
-
-  .about figure {
-    position: relative;
-
-    float: none;
-    clear: both;
-
-    width: 80%;
-    margin: auto;
-  }
-
-  /* line 305, ../SASS/master.scss */
-
-  .about figure img {
-    top: 1%;
-    left: 0.5%;
-
-    width: 98%;
-    height: 98%;
-  }
-
-  /* line 332, ../SASS/master.scss */
-
-  .about figure figcaption {
-    width: 100%;
-
-    font-size: 10px;
-  }
-
-  /* line 365, ../SASS/master.scss */
-
-  #userdata {
-    width: 100%;
-    height: auto;
-  }
-
-  /* line 404, ../SASS/master.scss */
-
-  .committee ul {
-    width: 300px;
-  }
-
-  /* line 415, ../SASS/master.scss */
-
-  .committee ul li {
-    float: none;
-
-    width: 90%;
-    margin: 25px auto;
-    padding: 0;
-
-    border-radius: 10px;
-  }
-
-  /* line 444, ../SASS/master.scss */
-
-  .committee ul img {
-    float: none;
-
-    width: 80%;
-    margin: auto;
-    padding: unset;
-
-    border: 0;
-  }
-
-  /* line 402, ../SASS/master.scss */
-
-  .committee {
-    margin-bottom: 10px;
-    padding-bottom: -20px;
-  }
-
-  /* line 503, ../SASS/master.scss */
-
-  .gallery .bridgeGL {
-    padding: unset;
-  }
-
-  /* line 512, ../SASS/master.scss */
-
-  .gallery .bridgeGL li {
-    display: block;
-
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-
-    line-height: unset;
-  }
-
-  /* line 527, ../SASS/master.scss */
-
-  .gallery .bridgeGL li img {
-    width: 90%;
-    margin-top: 30px;
-    margin-left: 5.5%;
-  }
-
-  /* line 65, ../SASS/mixin.scss */
-
-  section .title {
-    width: 80%;
-    margin: 20px auto;
-    padding-top: 25px;
-
-    font-size: 18px;
-  }
-
-  /* line 96, ../SASS/mixin.scss */
-
-  section p {
-    float: none;
-    clear: both;
-
-    width: 90%;
-    margin: 50px auto;
-
-    text-align: justify;
-  }
-
-  /* line 577, ../SASS/master.scss */
-
-  .register {
-    width: 100%;
-
-    border-radius: 15px;
-    -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
-  }
-
-  /* line 597, ../SASS/master.scss */
-
-  .register p {
-    z-index: 10;
-
-    visibility: visible;
-  }
-
-  /* line 610, ../SASS/master.scss */
-
-  .register .formL {
-    float: none;
-
-    width: 100%;
-    margin: auto;
-    padding-left: 10px;
-
-    border-radius: 15px;
-  }
-
-  /* line 655, ../SASS/master.scss */
-
-  .register .formL #Preview {
-    float: none;
-
-    margin: auto;
-  }
-
-  /* line 671, ../SASS/master.scss */
-
-  .register .formR {
-    position: relative;
-    top: -500px;
-    left: 0;
-
-    display: none;
-    float: none;
-
-    width: 100%;
-    margin: auto;
-
-    border-radius: 15px;
-  }
-
-  /* line 735, ../SASS/master.scss */
-
-  .register .formcont {
-    height: auto;
-  }
-
-  /* line 770, ../SASS/master.scss */
-
-  .register .formcont fieldset {
-    display: block;
-    float: left;
-    clear: both;
-
-    width: 100%;
-    margin: auto;
-  }
-
-  /* line 795, ../SASS/master.scss */
-
-  .register .formcont .rightit {
-    padding: 0;
-  }
-
-  /* line 813, ../SASS/master.scss */
-
-  .register form label {
-    width: 75px;
-    margin: 9px 0;
-
-    color: #000;
-
-    font-family: sans-serif;
-    font-size: 10px;
-    font-weight: 900;
-    line-height: 22px;
-  }
-
-  /* line 871, ../SASS/master.scss */
-
-  .register form input[type="text"] {
-    width: 180px;
-  }
-
-  /* line 879, ../SASS/master.scss */
-
-  .register form input[type="submit"] {
-    left: 0;
-  }
-
-  /* line 900, ../SASS/master.scss */
-
-  .register form input[type="email"] {
-    width: 180px;
-  }
-
-  /* line 850, ../SASS/master.scss */
-
-  .register form input {
-    margin: 12px 0;
-    padding: 11px 0px 9px 0px;
-
-    font-size: 12px;
-  }
-
-  /* line 983, ../SASS/master.scss */
-
-  .register form fieldset span {
-    float: left;
-    clear: both;
-  }
-
-  /* line 992, ../SASS/master.scss */
-
-  .register form fieldset select {
-    float: left;
-    clear: both;
-  }
-
-  /* line 1003, ../SASS/master.scss */
-
-  .register form fieldset label {
-    float: left;
-    clear: both;
-  }
-
-  /* line 1017, ../SASS/master.scss */
-
-  .register form fieldset input {
-    float: none;
-    clear: both;
-  }
-
-  /* line 1225, ../SASS/master.scss */
-
-  footer {
-    height: 160px;
-  }
-
-  /* line 1241, ../SASS/master.scss */
-
-  footer .content ul {
-    top: 40px;
-
-    width: 85%;
-  }
-
-  /* line 1259, ../SASS/master.scss */
-
-  footer .content li {
-    width: 100% / 3;
-  }
-
-  /* line 1266, ../SASS/master.scss */
-
-  footer .content li img {
-    width: 10%;
-  }
-
-  /* line 1273, ../SASS/master.scss */
-
-  footer .content .below {
-    top: 50px;
-  }
-
-  /* line 1281, ../SASS/master.scss */
-
-  footer .content .below p {
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width: 811px) and (max-width: 1024px) {
-  /* line 48, ../SASS/master.scss */
-
-  #main-nav .logo {
-    box-sizing: border-box;
-    width: 40%;
-    margin-top: 16px;
-    padding: 20px 0 0 70px;
-
-    background: url("../img/BridgeMB.png") no-repeat 15px 2px;
-
-    font-size: 0px;
-    font-weight: 700;
-    line-height: 1px;
-  }
-
-  /* line 91, ../SASS/master.scss */
-
-  #main-nav .logo a {
-    position: absolute;
-    top: 0;
-
-    width: 40%;
-    height: 50px;
-
-    background-color: transparent !important;
-  }
-
-  /* line 98, ../SASS/master.scss */
-
-  #main-nav .logo::before {
-    content: 'The Bridge';
-
-    font-family: 'Chonburi';
-    font-size: 17px;
-    font-weight: bolder;
-  }
-
-  /* line 126, ../SASS/master.scss */
-
-  #main-nav ul {
-    width: 57%;
-  }
-
-  /* line 155, ../SASS/master.scss */
-
-  #main-nav ul li {
-    right: 0;
-
-    margin: unset;
-
-    font-size: 12px;
-  }
-
-  /* line 187, ../SASS/master.scss */
-
-  #main-nav ul li a {
-    right: 0;
-
-    padding: 28.30189px 2.5%;
-  }
-
-  /* line 273, ../SASS/master.scss */
-
-  .about figure {
-    position: relative;
-    left: 2%;
-
-    float: right;
-
-    width: 400px;
-  }
-
-  /* line 305, ../SASS/master.scss */
-
-  .about figure img {
-    position: relative;
-    top: -0.1%;
-    left: -0.1%;
-
-    clear: both;
-
-    width: 400px;
-    height: 400px;
-  }
-
-  /* line 332, ../SASS/master.scss */
-
-  .about figure figcaption {
-    left: -2%;
-
-    width: 420px;
-    margin-left: 0%;
-
-    font-size: 17px;
-  }
-
-  /* line 415, ../SASS/master.scss */
-
-  .committee ul li {
-    width: 33.33333%;
-    margin: unset;
-
-    border-radius: 10px;
-  }
-
-  /* line 444, ../SASS/master.scss */
-
-  .committee ul img {
-    float: none;
-
-    width: 80%;
-    margin: auto;
-    padding: unset;
-
-    border: 0;
-  }
-
-  /* line 96, ../SASS/mixin.scss */
-
-  section p {
-    float: none;
-
-    width: 90%;
-    margin: auto;
-
-    text-align: justify;
-  }
-
-  /* line 577, ../SASS/master.scss */
-
-  .register {
-    width: 100%;
-  }
-
-  /* line 610, ../SASS/master.scss */
-
-  .register .formL {
-    width: 60%;
-  }
-
-  /* line 671, ../SASS/master.scss */
-
-  .register .formR {
-    visibility: visible;
-
-    width: 37%;
-
-    border: 2px black solid;
-  }
-
-  /* line 735, ../SASS/master.scss */
-
-  .register .formcont {
-    height: auto;
-  }
-
-  /* line 770, ../SASS/master.scss */
-
-  .register .formcont fieldset {
-    width: 40%;
-  }
-}
-
-@media screen and (min-width: 701px) and (max-width: 810px) {
-  /* line 48, ../SASS/master.scss */
-
-  #main-nav .logo {
-    width: 15%;
-    padding-left: 85px;
-
-    font-size: 0px;
-  }
-
-  /* line 109, ../SASS/master.scss */
-
-  #main-nav .logo a {
-    position: absolute;
-    top: 0;
-
-    width: 40%;
-    height: 50px;
-
-    background-color: transparent !important;
-  }
-
-  /* line 116, ../SASS/master.scss */
-
-  #main-nav .logo::before {
-    content: 'The Bridge';
-
-    font-family: 'Chonburi';
-    font-size: 17px;
-    font-weight: bolder;
-  }
-
-  /* line 126, ../SASS/master.scss */
-
-  #main-nav ul {
-    right: 0;
-
-    width: 69%;
-  }
-
-  /* line 155, ../SASS/master.scss */
-
-  #main-nav ul li {
-    width: 20%;
-
-    font-size: 10px;
-    font-weight: 600;
-  }
-
-  /* line 273, ../SASS/master.scss */
-
-  .about figure {
-    position: relative;
-
-    float: none;
-    clear: both;
-
-    width: 80%;
-  }
-
-  /* line 305, ../SASS/master.scss */
-
-  .about figure img {
-    top: 1%;
-    left: 1%;
-
-    width: 98%;
-    height: 98%;
-  }
-
-  /* line 332, ../SASS/master.scss */
-
-  .about figure figcaption {
-    width: 100%;
-
-    font-size: 14px;
-  }
-
-  /* line 415, ../SASS/master.scss */
-
-  .committee ul li {
-    width: 50%;
-    margin: unset;
-
-    border-radius: 10px;
-  }
-
-  /* line 444, ../SASS/master.scss */
-
-  .committee ul img {
-    float: none;
-
-    width: 80%;
-    margin: auto;
-    padding: unset;
-
-    border: 0;
-  }
-
-  /* line 65, ../SASS/mixin.scss */
-
-  section .title {
-    width: 50%;
-    margin: 20px auto;
-    padding-top: 25px;
-
-    font-size: 19.8px;
-  }
-
-  /* line 96, ../SASS/mixin.scss */
-
-  section p {
-    float: none;
-    clear: both;
-
-    width: 90%;
-    margin: 50px auto;
-
-    text-align: justify;
-  }
-
-  /* line 671, ../SASS/master.scss */
-
-  .register .formR {
-    top: -500px;
-
-    display: none;
-    float: none;
-
-    width: 100%;
-    height: 200px;
-    margin: auto;
-
-    border-radius: 15px;
-  }
-
-  /* line 735, ../SASS/master.scss */
-
-  .register .formcont {
-    height: auto;
-  }
-
-  /* line 795, ../SASS/master.scss */
-
-  .register .formcont .rightit {
-    padding: 0;
-  }
-}
